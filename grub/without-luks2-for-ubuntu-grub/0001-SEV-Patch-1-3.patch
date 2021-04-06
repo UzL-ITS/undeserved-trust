@@ -1,0 +1,101 @@
+From 0564fc2e0cccb174798e6c14b482160276ab5ed0 Mon Sep 17 00:00:00 2001
+From: alyrot <alyrot@protonmail.com>
+Date: Fri, 22 Jan 2021 09:13:20 +0100
+Subject: [PATCH 1/3] SEV Patch [1/3]
+
+
+diff --git a/grub-core/disk/cryptodisk.c b/grub-core/disk/cryptodisk.c
+index 1897acc4b..43268dfce 100644
+--- a/grub-core/disk/cryptodisk.c
++++ b/grub-core/disk/cryptodisk.c
+@@ -1000,7 +1000,7 @@ grub_cryptodisk_scan_device_real (const char *name, grub_disk_t source)
+     if (!dev)
+       continue;
+     
+-    err = cr->recover_key (source, dev);
++    err = cr->recover_key (source, dev, grub_password_get);
+     if (err)
+     {
+       cryptodisk_close (dev);
+diff --git a/grub-core/disk/geli.c b/grub-core/disk/geli.c
+index e9d23299a..65d29694c 100644
+--- a/grub-core/disk/geli.c
++++ b/grub-core/disk/geli.c
+@@ -398,7 +398,8 @@ configure_ciphers (grub_disk_t disk, const char *check_uuid,
+ }
+ 
+ static grub_err_t
+-recover_key (grub_disk_t source, grub_cryptodisk_t dev)
++recover_key (grub_disk_t source, grub_cryptodisk_t dev,
++            grub_passwd_cb *password_get)
+ {
+   grub_size_t keysize;
+   grub_uint8_t digest[GRUB_CRYPTO_MAX_MDLEN];
+@@ -442,7 +443,7 @@ recover_key (grub_disk_t source, grub_cryptodisk_t dev)
+ 		source->partition ? "," : "", tmp ? : "",
+ 		dev->uuid);
+   grub_free (tmp);
+-  if (!grub_password_get (passphrase, MAX_PASSPHRASE))
++  if (!password_get (passphrase, MAX_PASSPHRASE))
+     return grub_error (GRUB_ERR_BAD_ARGUMENT, "Passphrase not supplied");
+ 
+   /* Calculate the PBKDF2 of the user supplied passphrase.  */
+diff --git a/grub-core/disk/luks.c b/grub-core/disk/luks.c
+index 6ae162601..24d577156 100644
+--- a/grub-core/disk/luks.c
++++ b/grub-core/disk/luks.c
+@@ -151,7 +151,8 @@ configure_ciphers (grub_disk_t disk, const char *check_uuid,
+ 
+ static grub_err_t
+ luks_recover_key (grub_disk_t source,
+-		  grub_cryptodisk_t dev)
++		  grub_cryptodisk_t dev,
++                 grub_passwd_cb *password_get)
+ {
+   struct grub_luks_phdr header;
+   grub_size_t keysize;
+@@ -186,11 +187,13 @@ luks_recover_key (grub_disk_t source,
+   tmp = NULL;
+   if (source->partition)
+     tmp = grub_partition_get_name (source->partition);
+-  grub_printf_ (N_("Enter passphrase for %s%s%s (%s): "), source->name,
+-	       source->partition ? "," : "", tmp ? : "",
+-	       dev->uuid);
++
++  if (password_get == grub_password_get)
++         grub_printf_ (N_("Enter passphrase for %s%s%s (%s): "), source->name,
++                       source->partition ? "," : "", tmp ? : "",
++                       dev->uuid);
+   grub_free (tmp);
+-  if (!grub_password_get (passphrase, MAX_PASSPHRASE))
++  if (!password_get (passphrase, MAX_PASSPHRASE))
+     {
+       grub_free (split_key);
+       return grub_error (GRUB_ERR_BAD_ARGUMENT, "Passphrase not supplied");
+diff --git a/include/grub/cryptodisk.h b/include/grub/cryptodisk.h
+index e1b21e785..e70da1cb0 100644
+--- a/include/grub/cryptodisk.h
++++ b/include/grub/cryptodisk.h
+@@ -101,6 +101,9 @@ struct grub_cryptodisk
+ };
+ typedef struct grub_cryptodisk *grub_cryptodisk_t;
+ 
++/* must match prototype for grub_password_get */
++typedef int (grub_passwd_cb)(char buf[], unsigned buf_size);
++
+ struct grub_cryptodisk_dev
+ {
+   struct grub_cryptodisk_dev *next;
+@@ -108,7 +111,8 @@ struct grub_cryptodisk_dev
+ 
+   grub_cryptodisk_t (*scan) (grub_disk_t disk, const char *check_uuid,
+ 			     int boot_only);
+-  grub_err_t (*recover_key) (grub_disk_t disk, grub_cryptodisk_t dev);
++  grub_err_t (*recover_key) (grub_disk_t disk, grub_cryptodisk_t dev,
++                            grub_passwd_cb *get_password);
+ };
+ typedef struct grub_cryptodisk_dev *grub_cryptodisk_dev_t;
+ 
+-- 
+2.25.1
+

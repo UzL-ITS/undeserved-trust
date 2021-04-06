@@ -1,0 +1,200 @@
+videotest: font video gfxmenu
+odc: archelp
+macho:
+loopback:
+gcry_des: crypto
+memrw:
+part_gpt:
+f2fs: fshelp
+romfs: fshelp
+read:
+gcry_arcfour: crypto
+tftp: net
+newc: archelp
+minix2_be:
+elf:
+videotest_checksum: font functional_test video_fb
+password_pbkdf2: crypto gcry_sha512 pbkdf2 normal
+gcry_seed: crypto
+sfs: fshelp
+reiserfs: fshelp
+zstd:
+part_sunpc:
+gfxmenu: video_colors trig bitmap_scale gfxterm font normal video bitmap
+jfs:
+help: normal
+gfxterm_menu: font functional_test procfs normal video_fb
+gcry_idea: crypto
+configfile: normal
+tr:
+shift_test: functional_test
+afs: fshelp
+xzio: crypto
+syslinuxcfg: normal
+search_fs_file:
+test_blockarg: normal
+true:
+affs: fshelp
+iso9660: fshelp
+exfat: fshelp
+setjmp_test: functional_test setjmp
+gfxterm: font video
+disk:
+xfs: fshelp
+testspeed: normal
+functional_test: btrfs video video_fb
+cpio_be: archelp
+bswap_test: functional_test
+sleep: normal
+memdisk:
+gcry_rijndael: crypto
+mdraid09_be: diskfilter
+gettext:
+gcry_sha1: crypto
+offsetio:
+hfspluscomp: gzio hfsplus
+file: macho elf offsetio
+cmp:
+video_colors:
+hashsum: crypto normal
+halt:
+search_fs_uuid:
+gfxterm_background: video_colors bitmap_scale gfxterm video bitmap
+gcry_dsa: pgp mpi
+keystatus:
+geli: cryptodisk crypto gcry_sha512 pbkdf2 gcry_sha256
+cmdline_cat_test: font functional_test procfs normal video_fb
+part_sun:
+pbkdf2_test: functional_test pbkdf2 gcry_sha1
+verifiers:
+bufio:
+legacy_password_test: functional_test legacycfg
+gcry_blowfish: crypto
+bfs: fshelp
+test:
+nilfs2: fshelp
+gcry_rsa: pgp mpi
+cryptodisk: crypto procfs
+signature_test: functional_test procfs
+minicmd:
+udf: fshelp
+gzio: gcry_crc
+xnu_uuid: gcry_md5
+terminal:
+mul_test: functional_test
+adler32: crypto
+div:
+crypto:
+part_bsd: part_msdos
+gcry_sha512: crypto
+password: crypto normal
+fshelp:
+sleep_test: functional_test
+exfctest: functional_test
+zfsinfo: zfs
+ldm: part_gpt diskfilter part_msdos
+eval: normal
+part_dvh:
+blocklist:
+ext2: fshelp
+net: priority_queue bufio boot
+part_acorn:
+videoinfo: video
+btrfs: zstd lzopio raid6rec gzio
+lsmmap:
+strtoull_test: functional_test
+bitmap:
+ntfs: fshelp
+gcry_crc: crypto
+emunet: net
+png: bufio bitmap
+macbless: disk
+jpeg: bufio bitmap
+regexp: normal
+parttool: normal
+div_test: functional_test div
+cpio: archelp
+gcry_rmd160: crypto
+fat: fshelp
+ufs1_be:
+archelp:
+zfs: gzio
+raid6rec: diskfilter
+http: net
+minix2:
+loadenv: disk
+bitmap_scale: bitmap
+datehook: normal
+probe:
+minix3:
+tar: archelp
+procfs: archelp
+hfs: fshelp
+boot:
+progress: normal
+kernel:
+tga: bufio bitmap
+reboot:
+zfscrypt: crypto pbkdf2 zfs gcry_sha1 gcry_rijndael
+luks: cryptodisk crypto pbkdf2
+cmp_test: functional_test
+dm_nv: diskfilter
+font: bufio video
+raid5rec: diskfilter
+crc64: crypto
+video:
+ctz_test: functional_test
+hfsplus: fshelp
+gcry_cast5: crypto
+squash4: fshelp lzopio xzio gzio
+part_plan:
+minix_be:
+gcry_whirlpool: crypto
+gcry_tiger: crypto
+video_fb:
+search: search_fs_uuid search_fs_file search_label
+trig:
+minix3_be:
+priority_queue:
+msdospart: disk parttool
+gcry_twofish: crypto
+part_dfly:
+xnu_uuid_test: functional_test
+diskfilter:
+testload:
+part_apple:
+hexdump:
+pbkdf2: crypto
+gcry_sha256: crypto
+date: normal
+ls: normal
+ntfscomp: ntfs
+lzopio: crypto
+scsi:
+hello:
+pgp: crypto verifiers mpi gcry_sha1
+normal: terminal crypto verifiers bufio boot gettext
+cat:
+ufs1:
+mdraid09: diskfilter
+lvm: diskfilter
+cbfs: archelp
+ufs2:
+time:
+search_label:
+gptsync: disk
+setjmp:
+gcry_rfc2268: crypto
+mpi: crypto
+mdraid1x: diskfilter
+legacycfg: password crypto gcry_md5 normal
+part_amiga:
+sdl: video video_fb
+minix:
+echo:
+gcry_serpent: crypto
+gcry_md4: crypto
+gcry_md5: crypto
+part_msdos:
+gcry_camellia: crypto
+all_video: sdl

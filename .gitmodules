@@ -1,0 +1,12 @@
+[submodule "undserved-trust-ovmf"]
+	path = undserved-trust-ovmf
+	url = git@github.com:UzL-ITS/undserved-trust-ovmf.git
+[submodule "undeserved-trust-qemu"]
+	path = undeserved-trust-qemu
+	url = https://github.com/UzL-ITS/undeserved-trust-qemu.git
+[submodule "undeserved-trust-kernel"]
+	path = undeserved-trust-kernel
+	url = git@github.com:UzL-ITS/undeserved-trust-kernel.git
+[submodule "sev-tool"]
+	path = sev-tool
+	url = git@github.com:AMDESE/sev-tool.git

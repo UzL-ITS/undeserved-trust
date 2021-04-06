@@ -1,0 +1,16 @@
+Package: grub-emu
+Source: grub2
+Version: 2.04-1ubuntu26.7
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 26954
+Depends: libc6 (>= 2.28), libdevmapper1.02.1 (>= 2:1.02.36), libgcc-s1 (>= 3.0), libsdl1.2debian (>= 1.2.11), grub-common (= 2.04-1ubuntu26.7)
+Replaces: grub-common (<= 1.97~beta3-1)
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (emulated version)
+ This package contains grub-emu, an emulated version of GRUB.  It is only
+ provided for debugging purposes.
+Original-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>

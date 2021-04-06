@@ -1,0 +1,4 @@
+usr/lib/grub/x86_64-efi/*.exec
+usr/lib/grub/x86_64-efi/*.module
+usr/lib/grub/x86_64-efi/gdb_grub
+usr/lib/grub/x86_64-efi/gmodule.pl

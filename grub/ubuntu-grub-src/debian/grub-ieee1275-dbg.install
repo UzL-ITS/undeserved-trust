@@ -1,0 +1,4 @@
+usr/lib/grub/i386-ieee1275/*.exec
+usr/lib/grub/i386-ieee1275/*.module
+usr/lib/grub/i386-ieee1275/gdb_grub
+usr/lib/grub/i386-ieee1275/gmodule.pl

@@ -1,0 +1,36 @@
+grub-common-dbgsym_2.04-1ubuntu26.7_amd64.ddeb debug optional automatic=yes
+grub-common_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-coreboot-bin_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-coreboot-dbg_2.04-1ubuntu26.7_amd64.deb debug optional
+grub-coreboot_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-efi-amd64-bin_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-efi-amd64-dbg_2.04-1ubuntu26.7_amd64.deb debug optional
+grub-efi-amd64-signed-template_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-efi-amd64_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-efi-ia32-bin_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-efi-ia32-dbg_2.04-1ubuntu26.7_amd64.deb debug optional
+grub-efi-ia32_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-efi_2.04-1ubuntu26.7_amd64.deb oldlibs optional
+grub-emu-dbg_2.04-1ubuntu26.7_amd64.deb debug optional
+grub-emu_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-firmware-qemu_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-ieee1275-bin_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-ieee1275-dbg_2.04-1ubuntu26.7_amd64.deb debug optional
+grub-ieee1275_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-linuxbios_2.04-1ubuntu26.7_amd64.deb oldlibs optional
+grub-mount-udeb_2.04-1ubuntu26.7_amd64.udeb debian-installer optional
+grub-pc-bin-dbgsym_2.04-1ubuntu26.7_amd64.ddeb debug optional automatic=yes
+grub-pc-bin_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-pc-dbg_2.04-1ubuntu26.7_amd64.deb debug optional
+grub-pc_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-rescue-pc_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-theme-starfield_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-xen-bin_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-xen-dbg_2.04-1ubuntu26.7_amd64.deb debug optional
+grub-xen-host_2.04-1ubuntu26.7_amd64.deb admin optional
+grub-xen_2.04-1ubuntu26.7_amd64.deb admin optional
+grub2-common-dbgsym_2.04-1ubuntu26.7_amd64.ddeb debug optional automatic=yes
+grub2-common_2.04-1ubuntu26.7_amd64.deb admin optional
+grub2_2.04-1ubuntu26.7_amd64.buildinfo admin optional
+grub2_2.04-1ubuntu26.7_amd64.deb oldlibs optional
+grub2_2.04-1ubuntu26.7_amd64.tar.gz raw-uefi -

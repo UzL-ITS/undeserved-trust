@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb/12.10ubuntu1
+dpkg-maintscript-helper dir_to_symlink /usr/share/doc/grub-emu grub-common 2.00-2\~ -- "$@"
+# End automatically added section

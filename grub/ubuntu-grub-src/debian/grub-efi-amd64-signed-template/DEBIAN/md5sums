@@ -1,0 +1,13 @@
+c9075ce3a28993d5bb1835b6daabed60  usr/share/code-signing/grub-efi-amd64-signed-template/files.json
+de5d1a72ad988e4e427710b32842a7c8  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/README.source
+67d8b58b1d5ecf8a3ffc5327a4a57599  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/bug-control
+654228d15f75854c98b3277fdebb3b77  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/changelog
+7c5aba41f53293b712fd86d08ed5b36e  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/compat
+33433c84b94cf7d0baee2459d4bec6ff  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/control
+a915ffe83d50bfbcbf960a165cb97e85  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/copyright
+235346f2e9d78bd22854c668d2a7f98f  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/rules
+c5fc031a250b2d76fe051ac3621620ab  usr/share/code-signing/grub-efi-amd64-signed-template/source-template/debian/source/format
+c9af44b9ec19b9170fabcbb32f1d2368  usr/share/doc/grub-efi-amd64-signed-template/NEWS.Debian.gz
+a6d4810371ab4f09f982c07bb2180831  usr/share/doc/grub-efi-amd64-signed-template/changelog.Debian.gz
+966dd976254e84e9243ce58de18196fa  usr/share/doc/grub-efi-amd64-signed-template/copyright
+70d8c1a98f094a159b007c4b054a5623  usr/share/lintian/overrides/grub-efi-amd64-signed-template

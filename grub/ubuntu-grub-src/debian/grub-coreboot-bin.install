@@ -1,0 +1,6 @@
+usr/lib/grub/i386-coreboot/*.img
+usr/lib/grub/i386-coreboot/*.lst
+usr/lib/grub/i386-coreboot/*.mod
+usr/lib/grub/i386-coreboot/config.h
+usr/lib/grub/i386-coreboot/modinfo.sh
+usr/lib/grub/i386-coreboot/efiemu*.o

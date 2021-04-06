@@ -1,0 +1,3 @@
+grub-efi-ia32-dbg: unstripped-binary-or-object *.module
+grub-efi-ia32-dbg: statically-linked-binary *.image
+grub-efi-ia32-dbg: statically-linked-binary usr/lib/grub/i386-efi/kernel.exec

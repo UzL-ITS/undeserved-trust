@@ -1,0 +1,15 @@
+usr/lib/grub/x86_64-xen/*.img
+usr/lib/grub/i386-xen/*.img
+usr/lib/grub/i386-xen_pvh/*.img
+usr/lib/grub/x86_64-xen/*.lst
+usr/lib/grub/i386-xen/*.lst
+usr/lib/grub/i386-xen_pvh/*.lst
+usr/lib/grub/x86_64-xen/*.mod
+usr/lib/grub/i386-xen/*.mod
+usr/lib/grub/i386-xen_pvh/*.mod
+usr/lib/grub/x86_64-xen/config.h
+usr/lib/grub/i386-xen/config.h
+usr/lib/grub/i386-xen_pvh/config.h
+usr/lib/grub/x86_64-xen/modinfo.sh
+usr/lib/grub/i386-xen/modinfo.sh
+usr/lib/grub/i386-xen_pvh/modinfo.sh

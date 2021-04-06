@@ -1,0 +1,5 @@
+usr/lib/grub/i386-pc/*.exec
+usr/lib/grub/i386-pc/*.module
+usr/lib/grub/i386-pc/gdb_grub
+usr/lib/grub/i386-pc/gmodule.pl
+usr/lib/grub/i386-pc/*.image

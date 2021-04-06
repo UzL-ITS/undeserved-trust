@@ -1,0 +1,6 @@
+grub-emu: unstripped-binary-or-object *.mod
+grub-emu: statically-linked-binary usr/lib/grub/x86_64-emu/kernel.img
+grub-emu: statically-linked-binary ./usr/lib/grub/x86_64-emu/kernel.img
+grub-emu: unstripped-binary-or-object usr/lib/grub/x86_64-emu/kernel.img
+# This seems to be due to a readelf bug: https://bugs.debian.org/929585
+grub-emu: binary-or-shlib-defines-rpath usr/lib/grub/*-emu/macho.mod 0x0

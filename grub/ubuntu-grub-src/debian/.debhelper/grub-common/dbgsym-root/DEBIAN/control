@@ -1,0 +1,14 @@
+Package: grub-common-dbgsym
+Package-Type: ddeb
+Source: grub2
+Version: 2.04-1ubuntu26.7
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 15646
+Depends: grub-common (= 2.04-1ubuntu26.7)
+Section: debug
+Priority: optional
+Description: debug symbols for grub-common
+Build-Ids: 06c27827996fdb51f99cb4662575a1c4cae21f8b 0803d869fa39c24097e9376430a25e24a1bccb69 1b39700f395797718b499e5ef6d8349be63901d3 21e58ba25ad811d81f8af6c06ddd342bd49eb92b 648d974acaabdee09b59f97e71f653d273653d9e 66edad81a1160041d1b065a93c6481a664b8ae18 7e82a8c56eb9caeaf0016fbe9ea2a038dbbae99e 883bcfa6c32c9a0a59a99e912e5dd56d140836cf 8cc1d16772017e4c0cb09d12e3b4aa6350b765a8 946cf66349ffb4699d930f61887b7a28e5d7ba13 9655c6bfe8f16dbd4562257e13e79231d62cb553 9fc5de04e94ac22a38072eed6cdbf21ba73c111a a5814ccb423c1cec4f06f184dc9d5617e8ee4170 ae8e0e4a0b52f05639277c62d3156668bf29972f b34dfcd41a75621202e154bac4384d6ec8f14f49 bd158efdf2dc2d4cc1d599fb0b8f6300d250e0d1 be47ad1ed999e57f4f6f97bd695a96ea2a51d4e1 c1b38d99b6a9eaac60ea56d8c257235861bfc57f d3adb7ed61f0605ab875eed3caf2a20a051bce55 e13f633177f245558da6367a966394cd912bea63
+Original-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>

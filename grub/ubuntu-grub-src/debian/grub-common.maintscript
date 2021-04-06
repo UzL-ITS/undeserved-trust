@@ -1,0 +1,4 @@
+rm_conffile /etc/bash_completion.d/grub 2.02+dfsg1-9~
+# Removed in 1.96+20090307-1.
+rm_conffile /etc/grub.d/10_freebsd 2.00-14~
+rm_conffile /etc/grub.d/10_hurd 2.00-14~

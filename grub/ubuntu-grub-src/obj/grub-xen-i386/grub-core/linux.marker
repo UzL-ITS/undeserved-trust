@@ -1,0 +1,8 @@
+INPUT_TERMINAL_LIST_MARKER(const char *name __attribute__ ((unused)), grub_term_input_t term)
+OUTPUT_TERMINAL_LIST_MARKER(const char *name __attribute__ ((unused)), grub_term_output_t term)
+COMMAND_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+P1COMMAND_LIST_MARKER(const char *name, grub_command_func_t func, const char *summary, const char *description)
+  cmd_xen = COMMAND_LIST_MARKER("linux", grub_cmd_xen, 0, "Load Linux.")
+  cmd_multiboot = COMMAND_LIST_MARKER("multiboot", grub_cmd_xen, 0, "Load Linux.")
+  cmd_initrd = COMMAND_LIST_MARKER("initrd", grub_cmd_initrd, 0, "Load initrd.")
+  cmd_module = COMMAND_LIST_MARKER("module", grub_cmd_module, 0, "Load module.")

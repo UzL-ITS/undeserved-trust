@@ -1,0 +1,3 @@
+shlibs:Depends=libc6-udeb (>= 2.31), libdevmapper1.02.1-udeb (>= 2:1.02.167), libfuse2-udeb
+misc:Depends=
+misc:Pre-Depends=

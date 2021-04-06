@@ -1,0 +1,6 @@
+usr/lib/grub/i386-ieee1275/*.img
+usr/lib/grub/i386-ieee1275/*.lst
+usr/lib/grub/i386-ieee1275/*.mod
+usr/lib/grub/i386-ieee1275/config.h
+usr/lib/grub/i386-ieee1275/modinfo.sh
+usr/lib/grub/i386-ieee1275/efiemu*.o

@@ -1,0 +1,1052 @@
+Template: grub2/linux_cmdline
+Type: string
+Description: Linux command line:
+ The following Linux command line was extracted from /etc/default/grub or the
+ `kopt' parameter in GRUB Legacy's menu.lst. Please verify that it is correct,
+ and modify it if necessary. The command line is allowed to be empty.
+Description-ast.UTF-8: Linia comandos Linux:
+ La siguiente llinia de comandu Linux salió de /etc/default/grub o del parámetru `kopt' nel menú Legacy GRUB menu.lst. Por favor, comprueba que ye correuto, y modificalo si ye necesario. La llinia de comandu puede tar erma.
+Description-be.UTF-8: Радок камандаў для ядра Linux:
+ Гэты радок камандаў для ядра Linux узяты з файла /etc/default/grub або з параметра `kopt' у файле наладак (menu.lst) папярэдняй версіі GRUB (Legacy). Калі ласка, пераканайцеся, што каманды запісаныя правільна, або папраўце іх, калі трэба. Гэты радок камандаў можа быць пустым.
+Description-bg.UTF-8: Команден ред на Линукс:
+ Следния команден ред за зареждане на Линукс беше извлечен от /etc/default/grub или от параметъра „kopt“ от файла menu.lst на стария GRUB. Проверете го и ако е нужно го коригирайте. Допустимо е командният ред да бъде празен.
+Description-ca.UTF-8: Línia d'ordres de Linux:
+ La línia d'ordres de Linux següent ha sigut extreta de /etc/default/grub o del paràmetre «kopt» del fitxer menu.lst del GRUB Legacy. Verifiqueu que és correcta, i modifiqueu-la si és necessari. La línia d'ordres pot ser buida.
+Description-cs.UTF-8: Parametry pro Linux:
+ Následující řádka s parametry pro Linux byla získána ze starého souboru menu.lst z parametru „kopt“ nebo ze souboru /etc/default/grub. Zkontrolujte prosím, zda jsou parametry v pořádku a případně je upravte do požadované podoby. Řádka s parametry může být i prázdná.
+Description-cy.UTF-8: Llinell orchymyn Linux:
+ Mae'r llinell orchymyn Linux canlynol wedi ei dynnu o /etc/default/grub neu'r paramedr 'kopt' yn ffeil menu.lst GRUB etifeddol. Gwiriwch fod hyn yn gywir a newidwch os oes angen. Caniateir i'r linell orchymyn fod yn wag.
+Description-da.UTF-8: Kommandolinje til Linux:
+ Den følgende kommandolinje i Linux blev udtrukket fra /etc/default/grub eller parameteren `kopt' i GRUB Legacys menu.lst. Verificer venligst at den er korrekt, og ændre den om nødvendigt. Kommandolinjen må være tom.
+Description-de.UTF-8: Linux-Befehlszeile:
+ Die folgende Linux-Befehlszeile wurde aus /etc/default/grub oder dem Parameter »kopt« in der Datei menu.lst von GRUB Legacy extrahiert. Bitte überprüfen Sie, ob die Befehlszeile korrekt ist und ändern Sie diese, wenn es notwendig ist. Diese Befehlszeile darf leer sein.
+Description-dz.UTF-8: ལི་ནགསི་བརྡ་བཀོད་གྲལ་ཐིག་:
+ འོག་གི་ ལི་ནགསི་བརྡ་བཀོད་གྲལཐིག་འདི་ from from /etc/default/grub or the `kopt' parameter in GRUB Legacy's menu.lst. ལས་ ཕྱིར་དོན་འབད་འབདཝ་ཨིན། འདི་ངེས་བདེན་ཨིནམ་བདེན་སྦྱོར་འབད་ཞིནམ་ལས་ དགོས་མཁོ་ཡོད་པ་ཅིན་ལེགས་བཅོས་འབད། བརྡ་བཀོད་གྲལ་ཐིག་འདི་སྟོངམ་ཨིན་རུང་བཏུབ།
+Description-el.UTF-8: Γραμμή εντολής Linux:
+ Η επόμενη γραμμή εντολών για  Linux έχει εξαχθεί από το αρχείο /etc/default/grub ή από την παράμετρο `kopt' στο αρχείο menu.lst του GRUB Legacy.  Παρακαλώ επιβεβαιώστε ότι είναι ορθή και τροποποιήστε την αν είναι απαραίτητο. Η γραμμή επιτρέπεται να είναι κενή.
+Description-eo.UTF-8: Linuksa komand-linio:
+ La jena linuksa komand-linio estas elprenita el /etc/default/grub aŭ el la parametro 'kopt' en la menu.lst de malaktuala GRUB. Bonvolu kontroli ĉu ĝi estas korekta, kaj modifu ĝin laŭ neceso. Estas permesate ke la komand-linio
+Description-es.UTF-8: Línea de órdenes de Linux:
+ La siguiente línea de órdenes de Linux se extrajo del fichero «/etc/default/grub» o del parámetro «kopt» en el fichero «menu.lst» de la versión anterior de GRUB. Compruebe que es correcta y modifíquela si es necesario. La línea de órdenes se puede dejar en blanco.
+Description-eu.UTF-8: Linux-eko komando-lerroa:
+ Linux-eko komando-lerro hau /etc/default/grub edo GRUB zaharraren menu.lst fitxategiko 'kopt' parametrotik atera da. Egiaztatu zuzena dela, eta eraldatu behar izanez gero. Komando-lerroa hutsik egotea baimenduta dago.
+Description-fa.UTF-8: خط فرمان لینوکس:
+ خط فرمان لینوکس ذیل از /etc/default/grub یا پارامتر های `kopt' در فایل menu.lst از گراب قدیمی استخراج شده است. لطفاً صحت آن را بررسی کنید، و در صورت لزوم آن را تغییردهید. این خط فرمان می‌تواند خالی باشد.
+Description-fi.UTF-8: Linuxin komentorivi:
+ GRUBin aiemman version tiedostosta menu.lst parametrista ”kopt” tai tiedostosta /etc/default/grub löydettiin seuraava Linuxin komentorivi. Varmista, että se on kunnossa ja muuta sitä tarvittaessa. Komentorivin on sallittua myös olla tyhjä.
+Description-fr.UTF-8: Ligne de commande de Linux :
+ La ligne de commande de Linux suivante a été récupérée via le fichier /etc/default/grub ou le paramètre « kopt » du fichier menu.lst utilisé par la version originelle de GRUB. Veuillez contrôler qu'elle est correcte et la modifier si nécessaire. Cette ligne de commande peut être vide.
+Description-gl.UTF-8: Liña de comando de Linux:
+ A seguinte liña de comando de Linux sacouse de /etc/default/grub ou do parámetro «kopt» no ficheiro menu.lst de GRUB Legacy. Verifique que sexa correcta e modifíquea de ser preciso. A liña de comando pódese deixar baleira.
+Description-gu.UTF-8: લિનક્સ આદેશ:
+ નીચેનાં લિનક્સ આદેશ /etc/default/grub અથવા GRUB પરંપરાગત menu.lst ના `kopt' પરિમાણમાંથી નીકાળવામાં આવ્યા છે. મહેરબાની કરી ખાતરી કરો કે એ સાચા છે, અને જરુરી હોય તો તેને બદલો. આદેશ ખાલી રાખવાનું માન્ય છે.
+Description-he.UTF-8: שורת הפקודה של Linux:
+ שורת פקודת Linux הבאה נשלפה מ-‎/etc/default/grub או מפרמטר 'kopt' ב-menu.lst הישן של GRUB. נא לוודא ששורת פקודה זו נכונה ועדכן אותה אם צריך. ניתן להשאיר שורת פקודה זו ריקה.
+Description-hr.UTF-8: Linux naredbeni redak:
+ Ovaj naredbeni redak za sam Linux kernel je izvađen iz /etc/default/grub ili iz parametra 'kopt' u GRUB Legacy datoteci menu.lst. Molim provjerite je li ispravan, i ako je potrebno uredite ga. Naredbeni redak smije biti prazan.
+Description-hu.UTF-8: Linux parancssor:
+ A következő Linux parancssor az /etc/default/grub vagy a régi GRUB menu.lst fájljában lévő `kopt' paraméterből származik. Kérlek ellenőrizd, hogy helyes-e, és módosítsd, ha szükséges. A parancssor lehet üres is.
+Description-id.UTF-8: Baris perintah Linux:
+ Baris perintah Linux berikut ini disadur dari /etc/default/grub atau parameter 'kopt' di menu.lst pada GRUB jadul. Pastikan kebenarannya dan suntinglah bila perlu. Baris perintahnya diperbolehkan dikosongi.
+Description-is.UTF-8: Linux skipanalína:
+ Eftirfarandi Linux skipanalína fannst í /etc/default/grub eða í `kopt' viðfanginu í eldri GRUB menu.lst. Gakktu úr skugga um að þetta sé rétt og breyttu því ef það er nauðsynlegt. Skipanalínan má vera auð.
+Description-it.UTF-8: Riga di comando Linux:
+ La seguente riga di comando Linux è stata estratta da /etc/default/grub oppure dal parametro "kopt" presente nel file menu.lst di GRUB Legacy. Controllare che sia corretta e modificarla se necessario. La riga di comando può essere vuota.
+Description-ja.UTF-8: Linux コマンドライン:
+ 以下の Linux のコマンドラインは /etc/default/grub か GRUB Legacy の menu.lst 上の「kopt」パラメータから取得されています。これが正しいものであるかを確認して、必要であれば修正してください。コマンドラインは空でも構いません。
+Description-kk.UTF-8: Linux командалық жолы:
+ Келесі Linux командасы /etc/default/grub ішінен не GRUB Legacy menu.lst ішіндегі `kopt' параметрінен алынды. Оның дұрыстығын тексеріп, керек болса, өзгертіңіз. Бұл командалық жол бос болса да болады.
+Description-km.UTF-8: ពាក្យ​បញ្ជា​លីនុច ៖
+ ពាក្យ​បញ្ជា​លីនុច​ដូច​ខាង​ក្រោម​ត្រូវ​បាន​ដកស្រង់​ចេញ​ពី /etc/default/grub ឬ​ប៉ារ៉ាម៉ែត្រ `kopt' នៅ​ក្នុង menu.lst ចាស់​របស់​ GRUB ។ សូម​ផ្ទៀងផ្ទាត់​ថា​តើ​វា​ត្រឹមត្រូវ​ដែរឬទេ ហើយ​កែប្រែ​វា​ប្រសិន​បើ​ចាំបាច់ ។ ពាក្យ​បញ្ជា​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ទទេរ ។
+Description-ko.UTF-8: 리눅스 명령어:
+ 다음 리눅스 명령어를 /etc/default/grub 파일 또는 GRUB 구버전의 menu.lst의 `kopt' 파라미터에서 뽑아냈습니다. 명령어가 올바른지 확인하고 필요하다면 수정하십시오. 명령어는 비워 둘 수도 있습니다.
+Description-lt.UTF-8: „Linux“ komandos eilutė:
+ Iš „/etc/default/grub“ failo arba senosios „GRUB“ konfigūraciniame faile „menu.lst“ nurodyto „kopt“ parametro išrinkta žemiau pateikta „Linux“ komandos eilutė. Patikrinkite, ar ji tinkama ir jei reikia, ją patikslinkite. Komandos eilutė gali būti ir tuščia.
+Description-lv.UTF-8: Linux komandrinda:
+ Sekojošā Linux komandrinda tika izvilkta no /etc/default/grub vai `kopt' parametra GRUB mantojuma menu.lst. Lūdzu, pārliecinieties, ka tā ir pareiza un, ja vajag, mainiet to. Komandrinda drīkst būt tukša.
+Description-mr.UTF-8: लिनक्स आदेश ओळ:
+ पुढील लिनक्स आदेश ओळ /etc/default/grub ग्रब लीगसीच्या menu.lst मधील `kopt' घटकमूल्यामधून मिळवली आहे. कृपया ती योग्य आहे का, याची खातरजमा करा व आवश्यकता असल्यास बदल करा. आदेश ओळ रिकामी ठेवण्याची अनुमती असते.
+Description-nb.UTF-8: Kommandolinje i Linux:
+ Den følgende Linux-kommandolinjen ble trukket ut fra /etc/default/grub eller parameteren `kopt' i GRUB Legacys menu.lst. Verifiser at den er korrekt og endre den om nødvendig. Det er lov at kommandolinjen er tom.
+Description-nl.UTF-8: Linux-commandoregel:
+ De volgende Linux-commandoregel is gebaseerd op /etc/default/grub of op de 'kopt'-parameter, gevonden in het bestand menu.lst van GRUB oude-stijl. Gelieve deze op correctheid te controleren en indien nodig aan te passen. De commandoregel mag leeg zijn.
+Description-no.UTF-8: Kommandolinje i Linux:
+ Den følgende Linux-kommandolinjen ble trukket ut fra /etc/default/grub eller parameteren `kopt' i GRUB Legacys menu.lst. Verifiser at den er korrekt og endre den om nødvendig. Det er lov at kommandolinjen er tom.
+Description-pl.UTF-8: Wiersz poleceń do Linuksa:
+ Następujące polecenie do Linuksa zostało wyodrębnione z /etc/default/grub lub z parametru "kopt" w menu.lst GRUB-a Legacy. Proszę sprawdzić czy jest właściwe i zmodyfikować go, jeśli to konieczne. Wiersz z poleceniem może być pusty.
+Description-pt.UTF-8: Linha de comandos do Linux:
+ A seguinte linha de comandos Linux foi extraída de /etc/default/grub ou do parâmetro `kopt' no menu.lst do GRUB Legacy. Por favor verifique que está correcta, e modifique se necessário. É permitido que a linha de comandos esteja vazia.
+Description-pt_BR.UTF-8: Linha de comando Linux:
+ A linha de comando Linux a seguir foi extraída de /etc/default/grub ou do parâmetro 'kopt' do menu.lst do GRUB Legado. Por favor, verifique se ela está correta, e modifique-a se necessário. A linha de comando pode ser vazia.
+Description-ro.UTF-8: Linia de comandă Linux:
+ Această linie de comandă Linux a fost extrasă din /etc/default/grub sau parametrul „kopt” din fișierul menu.lst al vechiului GRUB. Verificați corectitudinea acesteia și modificați-o, dacă este nevoie. Linia de comandă poate fi goală.
+Description-ru.UTF-8: Командная строка Linux:
+ Представленная ниже строка команд Linux была извлечена из /etc/default/grub или параметра «kopt» файла menu.lst старой версии GRUB. Проверьте, что всё правильно, или измените её, если требуется. Также командная строка может быть пустой.
+Description-si.UTF-8: Linux විධාන රේඛාව:
+ පහත Linux විධානය /etc/default/grub හෝ පැරණි GRUB හි menu.lst හි 'kopt' පරාමිතියෙන් උපුටාගන්නා ලදී. කරුණාකර එය නිවැරදි දැයි තහවුරු කරන්න, ඇවැසිනම් වෙනස්කම් කරන්න. විධාන රේඛාව හිස්ව පැවතීමට ඉඩදෙයි.
+Description-sk.UTF-8: Linuxový príkazový riadok:
+ Nasledujúci príkazový riadok Linuxu bol získaný z /etc/default/grub alebo z parametra 'kopt' z menu.lst starého GRUB (Legacy). Skontrolujte prosím jeho správnosť a prípadne ho upravte. Príkazový riadok môže byť aj prázdny.
+Description-sl.UTF-8: Ukazna vrstica Linux:
+ Sledeči ukaz za Linux je vzet iz datoteke /etc/default/grub ali iz parametra `kopt' v datoteki  menu.lst sistema GRUB Legacy.  Preverite prosim, da je točen in ga po potrebi popravite. Ukazna vrstica je lahko tudi prazna.
+Description-sq.UTF-8: Linja komanduese linux:
+ Linja komanduese në vijim u ekstraktua nga /etc/default/grub ose nga parametri 'kopt' në menu.lst në GRUB të trashëguar. Të lutem verifiko nëse është korrekte ose modifikoje nëse do jetë e nevojshme. Kjo linjë komanduese lejohet të jetë bosh.
+Description-sr.UTF-8: Linux командна линија:
+ Ова линија намењена за Linux keрнел је из /etc/default/grub (GRUB 2) или из „kopt“ параметра датотеке menu.lst (GRUB Legacy). Проверите да ли је линија исправна и ако треба поправите је. Линија иначе, може остати и празна.
+Description-sr@latin.UTF-8: Linux komandna linija:
+ Ova linija namenjena za Linux kernel je iz /etc/default/grub (GRUB 2) ili iz „kopt“ parametra datoteke menu.lst (GRUB Legacy). Proverite da li je linija ispravna i ako treba popravite je. Linija inače, može ostati i prazna.
+Description-sv.UTF-8: Kommandorad för Linux:
+ Följande Linux-kommandorad hämtades från /etc/default/grub eller "kopt"-parametern i gamla GRUB:s menu.lst. Verifiera att den är korrekt och modifiera den om nödvändigt. Kommandoraden kan vara tom.
+Description-ta.UTF-8: லீனக்ஸ் கட்டளை வரி:
+ பின் வரும் லீனக்ஸ் கட்டளை வரி /etc/default/grub இலிருந்து அல்லது க்ரப் இன் பாரம்பரிய menu.lst இன் `kopt' அளபுருவிலிருந்து பெறப்பட்டது. இது சரியா என்று சோதித்து தேவையானால் மற்றவும். இந்த கட்டளை வரி காலியாக இருக்க அனுமதி உண்டு.
+Description-th.UTF-8: พารามิเตอร์สำหรับบูตลินุกซ์:
+ พารามิเตอร์สำหรับบูตลินุกซ์ต่อไปนี้ดึงออกมาจาก /etc/default/grub หรือพารามิเตอร์ `kopt' ใน menu.lst ของ GRUB รุ่นเก่า กรุณาตรวจสอบว่าค่านี้ถูกต้องหรือไม่ และกรุณาแก้ไขถ้าจำเป็น พารามิเตอร์นี้สามารถปล่อยเป็นค่าว่างเปล่าได้
+Description-tr.UTF-8: Linux komut satırı:
+ Aşağıdaki Linux komut satırı /etc/default/grub'dan ya da eski GRUB menu.lst dosyasındaki 'kopt' parametresinden alınmıştır. Lütfen doğruluğundan emin olun ve gerekirse düzeltin. Komut satırı boş bırakılabilir.
+Description-ug.UTF-8: Linux بۇيرۇق قۇرى:
+ تۆۋەندىكى Linux بۇيرۇق قۇرى /etc/default/grub ياكى GRUB Legacy نىڭ menu.lst دىكى `kopt' پارامېتىرىدىن ئاجرىتىدۇ. ئۇنىڭ توغرىلىقىنى جەزملەپ، ئېھتىياجغا ئاساسەن ئۆزگەرتىڭ.بۇيرۇق قۇرىنىڭ بوش قالدۇرۇلۇشىغا يول قويۇلىدۇ.
+Description-uk.UTF-8: Рядок параметрів ядра Linux:
+ Наступний рядок параметрів ядра Linux було взято із /etc/default/grub чи з параметру 'kopt' в menu.lst із GRUB Legacy. Перевірте будь ласка його правильність і, за потреби, внесіть зміни. Рядок параметрів ядра може бути порожнім.
+Description-vi.UTF-8: Dòng lệnh Linux:
+ Dòng lệnh Linux theo đây đã được trích ra từ /etc/default/grub hoặc từ tham số “kopt” trong menu.lst của GRUB Cũ. Hãy kiểm tra rằng nó vẫn đúng, và sửa đổi nó nếu cần. Dòng lệnh có thể được để trống.
+Description-zh_CN.UTF-8: Linux 命令行：
+ 已从 /etc/default/grub 或 GRUB Legacy 的 menu.lst 中的 `kopt' 参数中提取如下 Linux 命令行。请检查是否正确的，并且根据需要进行修改。此命令行可以为空。
+Description-zh_TW.UTF-8: Linux 命令列：
+ 以下的 Linux 命令列是由 /etc/default/grub，或是由 GRUB Legacy 的 menu.lst 中的 `kopt' 參數所擷取出來的。請確認它是否正確，若有必要請加以修改。此命令列可以留空。
+
+Template: grub2/linux_cmdline_default
+Type: string
+Default: quiet splash
+Description: Linux default command line:
+ The following string will be used as Linux parameters for the default menu
+ entry but not for the recovery mode.
+Description-ar.UTF-8: سطر أوامر لينكس الافتراضي:
+ سيتم استخدام سلسلة الحروف التالية كمُعطيات لتشغيل النظام لمُدخل القائمة
+ الافتراضي ولكن ليس لوضع الإنقاذ.
+Description-ast.UTF-8: Linia comandos por defeutu de Linux:
+ La siguiente cadena será usada como parámetros Linux pa la entrada del menú por defeutu, pero non pal mou recuperación.
+Description-be.UTF-8: Прадвызначаны радок камандаў для ядра Linux:
+ Наступны радок будзе выкарыстаны ў якасці параметраў ядра Linux для прадвызначанага пункту меню (але не для рэжыму аднаўлення).
+Description-bg.UTF-8: Параметри на Линукс по подразбиране:
+ Следните параметри ще бъдат използвани по подразбиране при зареждане на Линукс, освен в авариен режим.
+Description-ca.UTF-8: Línia d'ordres de Linux per defecte:
+ La cadena següent serà emprada com a paràmetres del Linux per al menú d'entrada per defecte però no per al mode de recuperació.
+Description-cs.UTF-8: Výchozí parametry pro Linux:
+ Následující parametry pro Linux se použijí pro výchozí položku menu, ale ne pro záchranný režim.
+Description-cy.UTF-8: Llinell orchymyn ddiofyn Linux:
+ Defnyddir y llinyn canlynol fel paramedrau Linux ar gyfer y cofnod bwydlen diofyn ond ddim ar gyfer y modd achub.
+Description-da.UTF-8: Standardkommandolinje i Linux:
+ Den følgende streng vil blive brugt som Linuxparametre for standardmenupunktet men ikke for gendannelsestilstanden.
+Description-de.UTF-8: Standard-Befehlszeile für Linux:
+ Die folgende Zeichenkette wird als Linux-Parameter für den Standardmenüeintrag, nicht aber für den Rettungsmodus verwandt.
+Description-dz.UTF-8: ལི་ནགསི་སྔོན་སྒྲིག་བརྡ་བཀོད་གྲལ་ཐིག་:
+ འོག་གི་ཡིག་རྒྱུན་འདི་ སྔོན་སྒྲིག་དཀར་ཆག་ཐོ་བཀོད་ཀྱི་དོན་ལུ་ ལི་ནགསི་ཚད་འཛིན་སྦེ་ལག་ལེན་འཐབ་ནི་ཨིན་ དེ་འབདཝ་ད་ སླར་གསོ་ཐབས་ལམ་གྱི་དོན་ལུ་མེན།
+Description-el.UTF-8: Προκαθορισμένη γραμμή εντολών Linux:
+ Η ακόλουθη συμβολοσειρά θα χρησιμοποιηθεί για τις παραμέτρους Linux στην προκαθορισμένη είσοδο του μενού εκκίνησης αλλά όχι για την κατάσταση διάσωσης (recovery mode).
+Description-eo.UTF-8: Linuksa implicita komand-linio:
+ La jena ĉeno estos uzata kiel linuksajn parametrojn por la ordinara menuero sed ne por la restariga reĝimo.
+Description-es.UTF-8: Línea de órdenes predeterminada de Linux:
+ La siguiente cadena se utilizará como parámetros de Linux para la entrada predeterminada del menú pero no para el modo de recuperación.
+Description-eu.UTF-8: Linux-eko komando-lerro lehenetsia:
+ Honako katea menuko sarrera lehenetsiaren Linux-eko parametro gisa erabiliko da, baina ez berreskuratzeko moduan.
+Description-fa.UTF-8: خط فرمان پیش فرض لینوکس:
+ این رشته به عنوان یکی از پارامتر های لینوکس برای منوی پیش فرض استفاده خواهد شد و نه برای حالت بازیابی.
+Description-fi.UTF-8: Linuxin oletuskomentorivi:
+ Seuraavaa merkkijonoa käytetään Linuxin käynnistysvalikon oletusvalinnan parametreina, mutta ei toipumistilassa.
+Description-fr.UTF-8: Ligne de commande par défaut de Linux :
+ Les paramètres indiqués seront utilisés pour le noyau Linux de l'entrée de menu par défaut mais pas pour le mode de secours.
+Description-gl.UTF-8: Liña de comando por defecto para Linux:
+ A seguinte liña será usada como parámetros para Linux na entrada por defecto do menú, pero non no modo de recuperación.
+Description-gu.UTF-8: લિનક્સ મૂળભૂત આદેશ:
+ નીચેનું વાક્ય મૂળભૂત મેનુ રીત માટે લિનક્સ પરિમાણો માટે વાપરવામાં આવશે પણ રીકવરી સ્થિતિ માટે નહી.
+Description-he.UTF-8: ברירת מחדל לשורת הפקודה של Linux:
+ המחרוזת הבאה תשמש כפרמטרי Linux עבור ברירת המחדל בתפריט אבל לא עבור מצב recovery.
+Description-hr.UTF-8: Pretpostavljeni Linux naredbeni redak:
+ Sljedeći izraz će biti korišten kao parametar za Linux stavke u izborniku, osim za spasonosni način rada.
+Description-hu.UTF-8: Az alapértelmezett Linux parancssor:
+ A következő sort fogjuk Linux paraméternek használni az alapértelmezett (default) menüben, de a rendszervisszaállító (recovery) módban nem.
+Description-id.UTF-8: Baris perintah standar Linux:
+ String berikut ini akan digunakan sebagai parameter Linux untuk menu standar tetapi tidak digunakan untuk modus darurat.
+Description-is.UTF-8: Sjálfgefin Linux skipanalína:
+ Eftirfarandi strengur verður notaður sem Linux viðfang í sjálfgefnu valmyndarfærslunni en ekki í viðgerðarham.
+Description-it.UTF-8: Riga di comando Linux predefinita:
+ Questa stringa verrà usata come parametri per Linux nella voce di menu predefinita, ma non nella modalità di ripristino.
+Description-ja.UTF-8: Linux デフォルトコマンドライン:
+ 以下の文字列は、リカバリーモードではない通常のメニューエントリでの Linux パラメータとして使われます。
+Description-ka.UTF-8: ლინუქსის სტანდარტული ბრძანების სტრიქონი:
+ შემდეგი სტრიქონი გამოყენებულ იქნება როგორც ლინუქსის პარამეტრები მენიუს სტანდარტული შენატანისათვის, მაგრამ არა აღდგენის რეჟიმისათვის.
+Description-kk.UTF-8: Linux бастапқы командалық жолы:
+ Келесі жол Linux параметрлері бастапқы мәзірі үшін, бірақ қалпына келтіру үшін емес, қолданылатын болады.
+Description-km.UTF-8: ពាក្យ​បញ្ជា​លំនាំ​ដើម​របស់​លីនុច ៖
+ ឃ្លា​ដូច​ខាង​ក្រោម​នឹង​ត្រូវ​បាន​ប្រើ​ជា​ប៉ារ៉ាម៉ែត្រ​លីនុច​សម្រាប់​ធាតុ​ម៉ឺនុយ​លំនាំដើម ប៉ុន្តែ​មិន​សម្រាប់​របៀប​សង្គ្រោះ​ទេ ។
+Description-ko.UTF-8: 리눅스 기본 명령어:
+ 다음 문자열을 기본 메뉴 항목의 리눅스 파라미터로 사용합니다. 복구 모드에서는 사용하지 않습니다.
+Description-lt.UTF-8: Numatytoji „Linux“ komandos eilutė:
+ Ši eilutė bus naudojama kaip įprastiniai „Linux“ branduolio parametrai, bet ne pasirinkus atkūrimo veikseną.
+Description-lv.UTF-8: Linux noklusējuma komandrinda:
+ Sekojošā virkne tiks izmantota kā Linux parametri izvēlnes noklusējuma ierakstam, bet ne sistēmas atgūšanas režīmā.
+Description-mr.UTF-8: लिनक्स मूलनिर्धारीत आदेश ओळ:
+ मुलनिर्धारित मेन्यू नोंदीकरिता लिनक्स घटकमूल्ये म्हणून खालील श्रुंखला वापरली जाईल, पण रिकव्हरी मोडसाठी नाही.
+Description-nb.UTF-8: Standardkommandolinje i Linux:
+ Den følgende teksten vil bli brukt som Linux-parametre for standardmenupunktet, men ikke for gjenopprettelsesmodus.
+Description-nl.UTF-8: Standaard Linux-commandoregel:
+ De volgende regel zal, behalve in de herstelmodus, gebruikt worden voor de Linux parameters in de standaard menuoptie.
+Description-no.UTF-8: Standardkommandolinje i Linux:
+ Den følgende teksten vil bli brukt som Linux-parametre for standardmenupunktet, men ikke for gjenopprettelsesmodus.
+Description-pl.UTF-8: Domyślny wiersz poleceń do Linuksa:
+ Następujący ciąg będzie użyty jako parametry przekazywane do jądra Linux w domyślnym wpisie menu (ale nie w trybie ratunkowym).
+Description-pt.UTF-8: Linha de comandos padrão do Linux:
+ A seguinte linha será utilizada como parâmetros para o Linux na entrada predefinida do menu, mas não para o modo de recuperação.
+Description-pt_BR.UTF-8: Linha de comando padrão Linux:
+ O seguinte texto será usado como lista de parâmetros do Linux para a entrada padrão do menu, mas não para o modo de recuperação.
+Description-ro.UTF-8: Linia de comandă implicită Linux:
+ Următorul șir va fi folosit ca parametru pentru Linux pentru poziția implicită din meniu, dar nu și pentru cea de recuperare.
+Description-ru.UTF-8: Командная строка Linux по умолчанию:
+ Данная строка будет использоваться в качестве параметров Linux в пункте меню по умолчанию, кроме режима восстановления.
+Description-si.UTF-8: පෙරනිමි Linux විධාන රේඛාව:
+ පහත යෙදුම පෙරනිමි මෙනු ඇතුළත් කිරීම් සඳහා Linux පරාමිතියක් ලෙස භාවිත වන නමුත් ගැලවීම් ප්‍රකාරයට නොවේ.
+Description-sk.UTF-8: Predvolený Linuxový príkazový riadok:
+ Nasledujúci reťazec bude použitý ako Linuxové parametre predvolenej položky menu, ale nie pre záchranný režim.
+Description-sl.UTF-8: Privzeta ukazna vrstica Linux:
+ Sledeča vrstica bo uporabljena kot parameter Linuxa za privzeti vnos v meniju, ne pa za reševalni način.
+Description-sq.UTF-8: Linja komanduese fillestare linux:
+ Stringu në vijim do të përdoren si parametër Linux për menun fillaster hyrëse por jo për gjëndjen e rekuperimit.
+Description-sr.UTF-8: Linux подразумевајућа команда линија:
+ Следећи стринг ће бити употребљен као Linux параметри за подреазумевано покретање, али не и за мод за поправку.
+Description-sr@latin.UTF-8: Linux podrazumevajuća komanda linija:
+ Sledeći string će biti upotrebljen kao Linux parametri za podreazumevano pokretanje, ali ne i za mod za popravku.
+Description-sv.UTF-8: Standardkommandorad för Linux:
+ Följande sträng kommer användas som Linux-parametrar för standardmenyvalet men inte för återhämtningsläge (eng. recovery).
+Description-ta.UTF-8: லீனக்ஸ் முன்னிருப்பு கட்டளை வரி:
+ பின் வரும் சரங்கள் முன்னிருப்பு மெனு உள்ளீட்டுக்கு லீனக்ஸ் அளபுருக்களாக பயன்படுத்தப்படும்; ஆனால் மீட்டெடுப்பு பாங்குக்கு அல்ல
+Description-th.UTF-8: พารามิเตอร์สำหรับบูตลินุกซ์แบบปกติ:
+ พารามิเตอร์ต่อไปนี้จะใช้ในเมนูสำหรับบูตลินุกซ์แบบปกติ แต่จะไม่ใช้กับโหมดกู้ระบบ
+Description-tr.UTF-8: Öntanımlı Linux komut satırı:
+ Aşağıdaki dizgi öntanımlı menü girişinin Linux parametreleri olarak kullanılacak; fakat kurtarma kipi için kullanılmayacaktır.
+Description-ug.UTF-8: Linux كۆڭۈلدىكى بۇيرۇق قۇرى:
+ تۆۋەندىكى ھەرپ تىزىقى كۆڭۈلدىكى تىزىملىك تۈرىنىڭ Linux پارامېتىرىغا ئىشلىتىلىدۇ ئەمما ئەسلىگە كەلتۈرۈش ھالىتىگە قوللىنىلمايدۇ.
+Description-uk.UTF-8: Типовий рядок параметрів ядра Linux:
+ Даний рядок буде використано як параметри ядра Linux для типового пункту меню, проте не для режиму відновлення.
+Description-vi.UTF-8: Dòng lệnh Linux mặc định:
+ Chuỗi theo đây sẽ được sử dụng làm các tham số Linux cho mục nhập trình đơn mặc định, mà không phải cho chế độ phục hồi.
+Description-zh_CN.UTF-8: Linux 默认命令行：
+ 如下字符串将被用于默认菜单项的 Linux 参数，但是不会用于恢复模式。
+Description-zh_TW.UTF-8: Linux 預設命令列：
+ 以下的字串將會用在預設的選單項目中做為 Linux 參數，但不會用於回復模式。
+
+Template: grub2/no_efi_extra_removable
+Type: boolean
+Default: false
+Description: Skip extra installation to the EFI removable media path?
+ Some EFI-based systems are buggy and do not handle new bootloaders correctly.
+ If you do not make an extra installation of GRUB to the EFI removable media
+ path, this may prevent your system from booting Debian correctly in case it is
+ affected by this problem. However, it may remove the ability to boot any other
+ operating systems that also depend on this path. If so, you will need to make
+ sure that GRUB is configured successfully to be able to boot any other OS
+ installations correctly.
+
+Template: grub2/update_nvram
+Type: boolean
+Default: true
+Description: Update NVRAM variables to automatically boot into Debian?
+ GRUB can configure your platform's NVRAM variables so that it boots into
+ Debian automatically when powered on. However, you may prefer to disable
+ this behavior and avoid changes to your boot configuration. For example,
+ if your NVRAM variables have been set up such that your system contacts a
+ PXE server on every boot, this would preserve that behavior.
+Description-be.UTF-8: Абнавіць зменныя NVRAM для аўтаматычнага запуску Debian?
+ GRUB можа так сканфігураваць зменныя NVRAM вашай платформы, каб яна аўтаматычна запускала Debian пры ўключэнні. Аднак магчыма, вам спатрэбіцца адключыць гэта і не змяняць вашу канфігурацыю запуску. Напрыклад, калі вашы зменныя NVRAM настроеныя, каб ваша сістэма кантактавала сервер PXE пры кожным запуску, гэта захавае такі рэжым.
+Description-bg.UTF-8: Промяна на параметрите в NVRAM за автоматично зареждане на Дебиан?
+ GRUB може да настрои параметрите в NVRAM на системата така че при включване на захранването да се зарежда Дебиан. Ако имате специални нужди като например връзка с PXE сървър при начално зареждане може да предпочетете да не се правят промени.
+Description-ca.UTF-8: Actualitzar les variables NVRAM per arrancar automàticament Debian?
+ GRUB pot configurar les variables NVRAM de la vostra plataforma per iniciar automàticament Debian quan s'engegui. També pot ésser que desitgeu deshabilitar aquest possibilitat i evitar canvis en la configuració de l'arrencada. Per exemple, si les variables NVRAM estan configurades de manera que el vostre sistema connecta amb un servidor PXE cada vegada que arranca, això hauria de conservar aquest comportament.
+Description-cs.UTF-8: Aktualizovat proměnné v NVRAM pro automatické zvedení Debianu?
+ GRUB může nakonfigurovat NVRAM proměnné na vaší platformě tak, že se po zapnutí rovnou zavede Debian. Možná ale máte důvod toto chování nepovolit a do zavádění nezasahavat. Jedním takovým případem by mohla být situace, kdy máte NVRAM proměnné nastavené tak, aby při každém zavádění kontaktovaly PXE server.
+Description-da.UTF-8: Opdater NVRAM-variabler til automatisk at starte i Debian?
+ GRUB kan konfigurere din platforms NVRAM-variabler, så de starter i Debian automatisk når tændt. Du kan dog foretrække at deaktivere denne opførsel og undgå ændringer til din opstartskonfiguration. For eksempel hvis dine NVRAM-variabler er blevet sat sådan op, at dit system kontakter en PXE-server ved hver opstart, vil dette bevare denne opførsel.
+Description-de.UTF-8: NVRAM aktualisieren, um direkt in Debian hineinzustarten?
+ GRUB kann die Plattformvariablen Ihres NVRAMs so konfigurieren, dass es direkt beim Einschalten in Debian hineinstartet. Es könnte allerdings sein, dass Sie es vorziehen, dieses Verhalten zu deaktivieren und Änderungen an Ihrer Systemstartkonfiguration zu vermeiden. Falls beispielsweise Ihre NVRAM-Variablen so konfiguriert wurden, dass Ihr System bei jedem Systemstart mit einem PXE-Server Kontakt aufnimmt, dann würde dies dieses Verhalten beibehalten.
+Description-eo.UTF-8: Ĉu ĝisdatigi variablojn NVRAM por aŭtomate ekŝargi al Debian?
+ GRUB povas agordi la variablojn NVRAM de via platformo por ke ĝi ekŝargu al Debian aŭtomate post ŝaltiĝo. Tamen, eble vi preferos malpermesi tiun ĉi konduton kaj eviti ŝanĝojn al la ekŝarga agordo. Ekzemple, se viaj variabloj NVRAM estis agordita por ke via sistemo kontaktu servilon PXE ĉe ĉiu ekŝargo, ne ŝanĝu ilin por teni la konduton.
+Description-es.UTF-8: ¿Desea actualizar las variables NVRAM para que se carguen automáticamente en Debian?
+ GRUB puede configurar las variables NVRAM de su plataforma para que se carguen automáticamente en Debian cuando se enciende. Aún así, puede preferir desactivar este comportamiento y no realizar cambios a su configuración de arranque. Por ejemplo, si las variables NVRAM se han configurado de forma que su sistema contacta con un servidor PXE en cada arranque, esto conservaría ese comportamiento.
+Description-eu.UTF-8: Eguneratu NVRAM-eko aldagaiak automatikoki Debian abiarazteko?
+ GRUB-ek ordenagailuaren NVRAM-eko aldagaiak konfigura ditzake piztean Debian batera automatikoki abiarazteko. Hala ere, portaera hau desgaitzea nahi izan dezakezu, eta abioaren konfigurazioaren aldaketak saihestu. Adibidez, NVRAM-eko aldagaiak konfiguratu egin badira abio bakoitzean sistemak PXE zerbitzari batekin konektatzeko, honek portaera hori mantenduko luke.
+Description-fr.UTF-8: Faut-il mettre à jour les variables dans la mémoire non volatile pour démarrer Debian automatiquement ?
+ GRUB peut configurer les variables dans la mémoire non volatile (NVRAM) pour démarrer Debian automatiquement à l'allumage. Cependant, vous pourriez avoir envie de désactiver cette possibilité et ainsi éviter les changements dans la configuration de l'amorçage. Par exemple, si les variables de votre NVRAM ont été configurées pour que le système se connecte à un serveur PXE à chaque démarrage, cela conserverait ce comportement.
+Description-hr.UTF-8: Ažurirati NVRAM varijable za automatsko učitavanje Debiana?
+ GRUB može postaviti NVRAM varijable vaše platforme da se automatski učita Debian pri uključivanju. Međutim, možda će vam biti praktičnije onemogućiti ovakvo ponašanje i izbjeći promjene vaših postavki. Na primjer, ako su vaše NVRAM varijable postavljene tako da se vaš sustav povezuje s PXE poslužiteljem pri svakom učitavanju, ovo će očuvati takvo ponašanje.
+Description-it.UTF-8: Aggiornare le variabili NVRAM per avviare automaticamente Debian?
+ GRUB può configurare le variabili NVRAM della propria piattaforma in modo da avviare automaticamente Debian all'accensione. Tuttavia, si potrebbe non volere questo comportamento ed evitare modifiche alla propria configurazione d'avvio. Per esempio, se le variabili NVRAM sono state impostate in modo che il sistema contatti un server PXE a ogni avvio, è possibile preservare tale impostazione.
+Description-kk.UTF-8: Debian ішіне автожүктелу үшін NVRAM айнымалыларын жаңарту керек пе?
+ GRUB сіздің платформаңыз іске қосылған кезде Debian ішіне автожүктелетіндей етіп NVRAM айнымалыларын баптай алады. Алайда, сіз бұл өзгерісті сөндіріп, жүктелу баптауларын өзгертпеуді қалауыңыз мүмкін. Мысалы, NVRAM айнымалылары жүйеңіз әр жүктелген кезде PXE серверімен байланысатындай бапталған болса, онда осындай әрекет сақталады.
+Description-ko.UTF-8: 데비안으로 자동 부팅하도록 NVRAM 변수를 업데이트하시겠습니까?
+ GRUB에서 이 플랫폼의 NVRAM 변수를 설정해서 전원을 켰을 때 데비안으로 부팅하도록 설정할 수 있습니다. 아니면 이 기능을 사용하지 않고 부팅 설정을 바꾸지 싶지 않을 수도 있습니다. 예를 들어 부팅할 때마다 PXE 서버에 연결하도록 NVRAM 변수가 설정되어 있고, 이 기능을 사용하지 않으면 계속 그렇게 동작할 것입니다.
+Description-lt.UTF-8: Ar nustatyti NVRAM parametrus taip, kad būtų automatiškai paleidžiama „Debian“ sistema?
+ „GRUB“ paleidyklė gali nustatyti jūsų sistemos NVRAM parametrus, kad ją įjungus, būtų automatiškai paleidžiama „Debian“ sistema. Būna situacijų, kai tai nepageidautina, pavyzdžiui, jei jūsų sistemos NVRAM parametrai nustatyti taip, kad kaskart pasileisdama, ji susisiektų su PXE serveriu, ir jūs nenorite šio scenarijaus keisti.
+Description-nb.UTF-8: Oppdatere NVRAM-variabler til å automatisk starte Debian?
+ GRUB kan sette opp din platforms NVRAM-variabler slik at den automatisk starter Debian når den slås på.  Du kan dog foretrekke å koble ut denne oppførselen og hoppe over endringer i ditt oppstartoppsett.  Hvis du for eksempel har satt opp dine NVRAM-variabler slik at systemet ditt kontakter en PXE-tjener ved hver oppstart, så kan du slik beholde opprinnelig oppførsel.
+Description-nl.UTF-8: De NVRAM-variabelen aanpassen om automatisch Debian op te starten?
+ GRUB kan de NVRAM-variabelen van uw platform zo configureren dat het automatisch Debian opstart wanneer het systeem aangezet wordt. Maar misschien wenst u dat gedrag liever niet te activeren en vermijdt u liever wijzigingen aan uw opstartconfiguratie. Indien bijvoorbeeld uw NVRAM-variabelen zo ingesteld werden dat uw systeem, telkens het opgestart wordt, een PXE-server contacteert, dan blijft op die manier dit gedrag gehandhaafd.
+Description-no.UTF-8: Oppdatere NVRAM-variabler til å automatisk starte Debian?
+ GRUB kan sette opp din platforms NVRAM-variabler slik at den automatisk starter Debian når den slås på.  Du kan dog foretrekke å koble ut denne oppførselen og hoppe over endringer i ditt oppstartoppsett.  Hvis du for eksempel har satt opp dine NVRAM-variabler slik at systemet ditt kontakter en PXE-tjener ved hver oppstart, så kan du slik beholde opprinnelig oppførsel.
+Description-pl.UTF-8: Zaktualizować zmienne NVRAM, aby automatycznie ładować Debiana?
+ GRUB może skonfigurować zmienne NVRAM platformy tak, aby automatycznie ładowała Debiana po uruchomieniu. Można też wyłączyć to zachowanie i nie zmieniać konfiguracji rozruchu. To pozwala na przykład pozostawić ustawienia zmiennych NVRAM takie, że system kontaktuje się z serwerem PXE przy każdym uruchomieniu.
+Description-pt.UTF-8: Actualizar as variáveis NVRAM para arrancar automaticamente o Debian?
+ O GRUB pode configurar as variáveis NVRAM da sua plataforma de modo a que arranque o Debian automaticamente quando ligar a máquina. No entanto pode preferir desactivar este comportamento e evitar alterações à sua configuração de arranque. Por exemplo, se as suas variáveis NVRAM foram definidas de modo a que o seu sistema contacte um servidor PXE em cada arranque, isto preservará esse comportamento.
+Description-pt_BR.UTF-8: Atualizar variáveis NVRAM para inicializar automaticamente no Debian?
+ O GRUB pode configurar as variáveis NVRAM da sua plataforma de forma que ela inicialize automaticamente no Debian quando for ligada. No entanto, você pode preferir desabilitar esse comportamento e evitar mudanças na sua configuração de inicialização. Por exemplo, se as suas variáveis NVRAM tiverem sido configuradas de forma que o seu sistema contate um servidor PXE a cada inicialização, isso preservaria tal comportamento.
+Description-ro.UTF-8: Doriți modificarea variabilelor NVRAM pentru a porni Debian automat?
+ GRUP poate configura variabilelor NVRAM ale platformei dumneavoastră astfel încât să pornească automat în Debian. Este posibil să nu doriți această modificare a configurației de pornire. De exemplu în situația în care ați configurat sistemul astfel încât să contacteze un server PXE la pornire această opțiune va păstra această configurație.
+Description-ru.UTF-8: Обновить переменные NVRAM для автоматического запуска Debian?
+ GRUB может изменить переменные NVRAM на вашей платформе и Debian будет загружаться автоматически при подаче питания. Однако, иногда это нежелательно. Например, если в переменных NVRAM указаны настройки для подключению к серверу PXE при каждом запуске, то лучше ничего не менять.
+Description-sl.UTF-8: Želite posodobiti spremenljivke NVRAM za samodejni zagon v Debian?
+ GRUB lahko nastavi spremenljivke NVRAM vašega računalniškega okolja tako, da samodejno zažene Debian ob vklopu. V primeru, da tega ne želite, lahko to onemogočite in preprečite spremembo vaše zagonske konfiguracije. Na primer, če so spremenljivke NVRAM nastavljene tako, da vaš sistem ob vsakem zagonu komunicira s strežnikom PXE, bo ta nastavitev ohranjena.
+Description-sv.UTF-8: Uppdatera NVRAM-variabler för att automatiskt starta Debian?
+ Grub kan ställa in systemets NVRAM-variabler så att det kan starta Debian automatiskt. Det kan tänkas att du inte vill ha detta läge aktivt och undvika att ändra inställningarna för systemstart. Exempelvis om dina NVRAM-variabler är satta till att systemet kontaktar en PXE-server vid varje start.
+Description-th.UTF-8: ปรับข้อมูลตัวแปร NVRAM ให้บูตเข้าเดเบียนโดยอัตโนมัติหรือไม่?
+ GRUB สามารถตั้งค่าตัวแปร NVRAM ของแพลตฟอร์มของคุณเพื่อให้บูตเข้าสู่เดเบียนโดยอัตโนมัติเมื่อเปิดเครื่องได้ อย่างไรก็ดี คุณอาจต้องการปิดการกระทำนี้และไม่เปลี่ยนค่าตั้งการบูตของคุณก็ได้ ตัวอย่างเช่น ถ้าตัวแปร NVRAM ของคุณได้ถูกตั้งค่าไว้ให้ระบบติดต่อไปยังเซิร์ฟเวอร์ PXE ทุกครั้งที่บูต คุณก็อาจเลือกไม่ปรับตัวแปร NVRAM นี้ และระบบก็จะคงพฤติกรรมเดิมนั้นไว้
+Description-tr.UTF-8: NVRAM değişkenleri Debian'ı önyükleyecek şekilde güncellensin mi?
+ GRUB, platform NVRAM değişkenlerini, bilgisayarınız açıldığında otomatik olarak Debian'ı başlatacak şekilde yapılandırılabilir. Bu davranışı devre dışı bırakarak önyükleme yapılandırmasında herhangi bir değişiklik yapılmamasını sağlayabilirsiniz. Bu durumda, örneğin NVRAM değişkenleri her açılışta PXE sunucuları ile iletişim kuracak şekilde ayarlanmışsa bu davranış aynı şekilde devam edecektir.
+Description-ug.UTF-8: مەزكۇر NVRAM ئۆزگەرگۈچى قىممىتىنى يېڭىلاپ Debian گە ئۆزلۈكىدىن يېتەكلەمدۇ؟
+ مەزكۇر GRUB سۇپىڭىزنىڭ NVRAM قىممىتىنى سەپلەپ، توك چاتقاندا Debian گە ئۆزلۈكىدىن يېتەكلەشكە قولايلىق يارىتىدۇ. ئەمما يېتەكلەش سەپلىمىسىنى ئۆزگەرتىشتىن ساقلىنىش ئۈچۈن بۇ قىلمىشنى چەكلەشنى ئۈمىد قىلىشىڭىز مۇمكىن. مەسىلەن، ئەگەر سىزنىڭ NVRAM ئۆزگەرگۈچى قىممىتىڭىز سىستېما ھەر قېتىم قوزغالغاندا PXE مۇلازىمېتىر بىلەن باغلىنىدىغان قىلىپ تەڭشەلگەن بولسا، بۇ قىلمىشنى ساقلاپ قالىدۇ.
+Description-uk.UTF-8: Оновити змінні NVRAM для автоматичного завантаження Debian?
+ GRUB може налаштувати змінні NVRAM вашої платформи так, щоб завантажувати Debian автоматично відразу після увімкнення живлення. Проте ви можете заборонити це щоб уникнути змін ваших налаштувань завантаження. Для прикладу, якщо ваші змінні NVRAM налаштовані на автоматичне з'єднання системи із PXE-сервером при кожному завантаженні, то ви збережете їх.
+Description-vi.UTF-8: Cập nhật các biến NVRAM để tự động khởi động vào Debian?
+ GRUB có thể cấu hình các biến NVRAM của nền tảng vậy thì nó khởi động vào Debian một cách tự động không bật máy. Tuy nhiên, bạn có lẽ ưa thích tắt cách hành xử này và tránh thay đổi đến cấu hình khởi động của bạn. Ví dụ, nếu biến NVRAM của bạn đã được cài đặt như thế hệ thống liên lạc với máy phục vụ PXE mỗi lần khởi động, điều này sẽ ngăn ngừa cách hành xử đó.
+
+Template: grub-efi/install_devices
+Type: multiselect
+Choices-C: ${RAW_CHOICES}
+Choices: ${CHOICES}
+Description: GRUB EFI system partitions:
+ The grub-efi package is being upgraded. This menu allows you to select which
+ EFI system partions you'd like grub-install to be automatically run for, if any.
+ .
+ Running grub-install automatically is recommended in most situations, to
+ prevent the installed GRUB core image from getting out of sync with GRUB
+ modules or grub.cfg.
+
+Template: grub-efi/install_devices_disks_changed
+Type: multiselect
+Choices-C: ${RAW_CHOICES}
+Choices: ${CHOICES}
+Description: GRUB install devices:
+ The GRUB boot loader was previously installed to a disk that is no longer
+ present, or whose unique identifier has changed for some reason. It is
+ important to make sure that the installed GRUB core image stays in sync
+ with GRUB modules and grub.cfg. Please check again to make sure that GRUB
+ is written to the appropriate boot devices.
+Description-ast.UTF-8: GRUB falló al instalar nos siguientes preseos:
+ El xestor d'arranque GRUB instalóse nun discu que nun ta presente, o que cambió d'identificador únicu por dalguna razón. Ye importante asegurase de que la imaxe del motor de GRUB sigui sincronizada colos módulos de GRUB y grub.cfg. Por favor prueba otra vuelta p'asegurate de que GRUB ta escritu nel preséu d'arranque correutu.
+Description-be.UTF-8: Прылады, на якія ўсталёўваць GRUB:
+ Пачатковы запускальнік GRUB раней быў усталяваны на дыск, які зараз адсутнічае, альбо чый унікальны ідэнтыфікатар па нейкай прычыне змяніўся. Важна, каб усталяваны асноўны вобраз GRUB адпавядаў модулям GRUB і grub.cfg. Калі ласка, праверце яшчэ раз, каб упэўніцца, што GRUB запісаны ў адпаведныя загрузкавыя прылады.
+Description-bg.UTF-8: Инсталиране на GRUB на следните устройства:
+ Програмата за начално зареждане на GRUB е била инсталирана на диск, който вече не е достъпен или  чийто уникален идентификатор е бил променен. Много е важно инсталираният образ винаги да е отговаря на модулите на GRUB и файла grub.cfg на файловата система. Проверете и се убедете, че GRUB се инсталира на правилните устройства.
+Description-ca.UTF-8: Dispositius d'instaŀlació del GRUB:
+ El carregador GRUB estava instaŀlat a un disc que ja no és present, o per al qual ha canviat el seu identificador únic per alguna raó. És important assegurar-se que la imatge del nucli del GRUB roman sincronitzada amb els mòduls del GRUB i el grub.cfg. Comproveu de nou que el GRUB s'escriu als dispositius d'arrencada apropiats.
+Description-cs.UTF-8: Zařízení pro instalaci GRUBu:
+ Zavaděč GRUB byl dříve nainstalován na disk, který již není dostupný, nebo jehož unikátní identifikátor se z nějakého důvodu změnil. Je důležité, aby nainstalovaný obraz jádra GRUBu odpovídal GRUB modulům a souboru grub.cfg. Ještě jednou se prosím ujistěte, že je GRUB zapsán na příslušných zaváděcích zařízeních.
+Description-cy.UTF-8: Dyfeisiau sefydlu GRUB:
+ Roedd y llwythwr ymgychwyn GRUB wedi ei osod yn flaenorol i ddisg sydd ddim yn bresennol bellach, neu fod ei rif unigryw wedi newid am rhyw reswm. Mae'n bwysig i wneud yn siwr fod y ddelwedd craidd GRUB a osodwyd yn gyson gyda modiwlau GRUB a grub.cfg. Gwiriwch eto i wneud yn siwr fod GRUB yn ysgrifennu i'r dyfeisiau ymgychwyn addas.
+Description-da.UTF-8: GRUBs installationsenheder:
+ GRUB-opstartsindlæseren blev tidligere installeret til en disk, som ikke længere er tilgængelig, eller hvis unikke identifikation er blevet ændret. Det er vigtigt at sikre sig, at det installerede GRUB-kerneaftryk forbliver i synkronisering med GRUB-moduler og grub-cfg. Kontroller venligst en ekstra gang så du er sikker på, at GRUB skrives til de relevante opstartsenheder.
+Description-de.UTF-8: Geräte für die GRUB-Installation:
+ Der GRUB-Bootloader wurde zuvor auf einem Datenträger, der nicht mehr im System vorhanden ist oder dessen eindeutige Kennung aus irgendeinem Grund geändert wurde, installiert. Es ist wichtig, sicherzustellen, dass das installierte GRUB-Core-Image synchron mit den GRUB-Modulen und grub.cfg bleibt. Bitte prüfen Sie erneut, um sicherzustellen, dass GRUB auf die entsprechenden Boot-Geräte geschrieben wird.
+Description-dz.UTF-8: GRUB གཞི་བཙུགས་ ཐབས་འཕྲུལ་ཚུ :
+ GRUB བུཊི་ མངོན་གསལ་པ་འདི་ ཧེ་མ་ལས་ ཌིཀསི་མེད་མི་ ཡང་ན་ མཐུན་མོང་མ་ཡིན་པའི་ངོས་འཛིན་པ་འདི་ དོན་དག་གང་རུང་ལུ་བརྟེན་ བསྒྱུར་བཅོས་སོང་ཡོད་མི་ལུ་གཞི་བཙུགས་འབད་ནུག། གཞི་བཙུགས་འབད་ཡོད་པའི་ GRUB core གཟུགས་བརྙན་འདི་ GRUB མོ་ཌུལསི་ དང་ grub.cfg དང་ མཉམ་འབྱུང་སྦེ་སྡོད་བཏུབ་ ངེས་བདེན་བཟོ་དགོ། GRUB འདི་ བུཊི་ཐབས་འཕྲུལ་ འོས་ལྡན་ལུ་འབྲི་ཡོདཔ་ངེས་བདེན་་སྦེ་ཤེས་ཚུགས་ནིའི་དོལུ་  ལོག་ཞིབ་དཔྱད་འབད་གནང་།
+Description-el.UTF-8: Συσκευές εγκατάστασης του GRUB:
+ Ο φορτωτής εκκίνησης GRUB είχε εγκατασταθεί προηγουμένως σε έναν δίσκο που δεν είναι πλέον παρών στο σύστημα ή που ο μοναδικός κωδικός αναγνώρισής του έχει για κάποιο λόγο αλλάξει. Είναι σημαντικό να βεβαιωθείτε ότι το κύριο εγκατεστημένο αντίγραφο του GRUB παραμένει συγχρονισμένο με τιςενότητεςτου GRUB στο αρχείο grub.cfg. Παρακαλώ ελέγξτε ξανά για νασιγουρευτείτε ότι το GRUB έχει εγγραφεί στις κατάλληλες εκκινήσιμες συσκευές.
+Description-eo.UTF-8: Aparatoj instalataj de GRUB:
+ La ekŝargilo GRUB estis antaŭe instalita al disko kiu ne plu ekzistas, aŭ kies unika identigilo ŝanĝis ial ajn. Estas grave certigi ke la instalita kerna bildo GRUB teniĝu sinkrona kun la moduloj GRUB kaj grub.cfg. Bonvolu rekontroli por certigi ke GRUB estas skribota al taŭgaj ekŝargaj aparatoj.
+Description-es.UTF-8: Dispositivos donde puede instalar GRUB:
+ El gestor de inicio GRUB se instaló previamente en un disco que ya no está presente o cuyo identificador único ha cambiado por alguna razón. Es importante asegurarse de que la imagen del núcleo de GRUB instalada se mantiene sincronizada con los módulos de GRUB y el fichero «grub.cfg». Asegúrese que GRUB se instala en los dispositivos de inicio adecuados.
+Description-eu.UTF-8: GRUB instalatzeko gailuak:
+ Lehenago GRUB abioko kargatzailea agertzen ez den disko batean instalatu zen, edo edozer arrazoirengatik identifikatzaile esklusiboa aldatuta dauka. Garrantzitsua da instalatutako GRUBaren bihotzaren irudia sinkronizatuta egotea GRUBaren modulu eta grub.cfg fitxategiarekin. Egiaztatu ezazu berriro GRUB abioko gailu egokian idatzi dela.
+Description-fa.UTF-8: دستگاه‌های نصب گراب:
+ بارگذار بوت گراب قبلاً در دیسکی نصب شده است که دیگر در دسترس نیست، یا unique identifier آن بنا به دلیلی تغییر کرده است. مهم است که اطمینان حاصل کنید که نصویر هستهٔ گراب نصب شده در sync با ماژول‌های گراب و grub.cfg باقی بماند. لطفاً دوباره بررسی کنید تا مطمئن گردید که گراب در دستگاه‌های بوت مناسب نوشته شده است.
+Description-fi.UTF-8: Laitteet joille GRUB asennetaan:
+ GRUB-käynnistyslatain oli aiemmin asennettuna levylle, jota ei ole enää käytössä tai jonka yksilöllinen tunniste on muuttunut jostain syystä. On tärkeää varmistaa, että asennettu GRUB-ydinkuva pysyy ajan tasalla GRUB-moduulien ja grub-cfg:n kanssa. Tarkista vielä uudelleen varmistaaksesi, että GRUB kirjoitetaan oikeille käynnistyslaitteille.
+Description-fr.UTF-8: Périphériques où installer GRUB :
+ Le chargeur d'amorçage GRUB était précédemment installé sur un disque qui n'est plus présent ou dont l'identifiant unique a changé pour une raison ou une autre. Il est important de vous assurer que l'image de GRUB qui est installée reste synchronisée avec les modules de GRUB ou grub.cfg. Veuillez vérifier à nouveau que GRUB sera bien installé sur les périphériques d'amorçage pertinents.
+Description-gl.UTF-8: Dispositivos onde instalar GRUB:
+ O cargador de arranque GRUB foi anteriormente instalado en un disco que xa non está presente, ou que mudou o seu identificador único por algunha razón. É importante asegurarse de que a imaxe do núcleo de GRUB se manteña sincronizada cos módulos de GRUB e co ficheiro «grub.cfg». Comprobe de novo para asegurarse de que GRUB se escribiu no dispositivo de arranque apropiado.
+Description-gu.UTF-8: GRUB સ્થાપન ઉપકરણો:
+ ડિસ્ક પર પહેલાં સ્થાપન કરેલ GRUB બૂટ લોડર હવે હાજર નથી, અથવા તેની ઐક્ય ઓળખ કોઈ કારણોસર બદલાઈ ગઈ છે. એ મહત્વનું છે કે સ્થાપિત GRUB મુખ્ય ઈમેજ GRUB મોડ્યુલ્સ અને grub.cfg જોડે સંગત રહે તેની ખાતરી કરાઈ હોય. મહેરબાની કરી ફરીથી ખાતરી કરી ચકાસો કે GRUB એ યોગ્ય બૂટ ઉપકરણોમાં લખાયેલ છે.
+Description-he.UTF-8: התקנים להתקנת GRUB:
+ המאתחל של GRUB הותקן מקודם בדיסק שכבר אינו קיים, או שהמזהה הייחודי שלו השתנה מסיבה כלשהי. חשוב לוודא שקוד האתחול של ליבת GRUB נשאר מתואם עם מודולי GRUB ו-grub.cfg. אנא בדוק שוב כדי לוודא ש-GRUB נכתב להתקני האתחול המתאימים.
+Description-hr.UTF-8: GRUB uređaji za instalaciju:
+ GRUB boot učitavač je prethodno instaliran na disk koji više nije prisutan, ili se njegov jedinstveni identifikator iz nekog razloga promijenio. Važno je osigurati da instalirana GRUB osnovna slika ostane sikronizirana s GRUB modulima i grub.cfg. Molim ponovo provjerite je li GRUB instaliran na odgovarajuće boot uređaje.
+Description-hu.UTF-8: GRUB telepítési eszközök:
+ A GRUB rendszerbetöltő korábban egy olyan lemezre volt telepítve, amely hiányzik vagy amelynek megváltozott az egyedi azonosítója. Fontos, hogy biztosítsuk, hogy a GRUB töltőkép ugyanolyan verziójú legyen, mint a GRUB modulok és a grub.cfg. Kérlek ellenőrizd még egyszer hogy biztosan a megfelelő eszközre írjuk a GRUB-ot.
+Description-id.UTF-8: Piranti pemasangan GRUB:
+ Pemuat boot GRUB sebelumnya telah dipasang di harddisk yang sekarang sudah lenyap atau identifikasi unik telah berubah karena suatu hal. Sangat penting memastikan citra inti GRUB yang terpasang selalu sesuai dengan modul GRUB dan grub.cfg. Mohon periksa kembali untuk memastikan GRUB ditulis di piranti boot yang sesuai.
+Description-is.UTF-8: GRUB uppsetningartæki:
+ GRUB ræsistjórinn vað áður uppsettur á disk sem ekki er lengur til staðar eða sem hefur af einhverjum ástæðum fengið nýtt auðkenni/tilvísun. Það er mikilvægt að ganga úr skugga um að uppsetta GRUB aðalmyndin sé samstillt við GRUB-einingar og grub.cfg stilliskrána.. Athugaðu aftur hvort GRUB sé skrifað á viðeigandi ræsitæki.
+Description-it.UTF-8: Installare GRUB sui device:
+ In precedenza il boot loader GRUB era installato su un disco non più presente o che per qualche motivo ha cambiato identificatore univoco. È importante assicurare che l'immagine principale di GRUB rimanga in sincronia con i moduli di GRUB e con grub.cfg. Controllare nuovamente per essere sicuri che GRUB sia scritto sui corretti device di avvio.
+Description-ja.UTF-8: GRUB をインストールするデバイス:
+ 以前、GRUB ブートローダーは、すでに存在しない、あるいは何らかの理由で固有の識別子が変更されたディスクにインストールされていました。インストールされている GRUB コアイメージが GRUB モジュールや grub.cfg と一致しているのを確認するのは重要です。もう一度、GRUB が適切な起動デバイスに書き込まれているか確かめてください。
+Description-kk.UTF-8: GRUB орнатылатын құрылғылар:
+ GRUB жүктеушісі қазір жоқ болып тұрған, немесе қандай да бір себептермен уникалды идентификаторы өзгерген дискіге бұрын орнатулы болған. Орнатылған GRUB өзегі және модульдер мен grub.cfg-мен үйлесімді болуын тексеру маңызды. GRUB дұрыс жүктелу құрылғыларына жазылғанын тағы да бір рет тексеріңіз.
+Description-km.UTF-8: GRUB ដំឡើង​ឧបករណ៍ ៖
+ កម្មវិធី​ចាប់ផ្ដើម​ប្រព័ន្ធ GRUB ត្រូវ​បាន​ដំឡើង​ពី​មុន ទៅ​ថាស​ដែល​លែង​ប្រើ ឬ​អត្តសញ្ញាណ​តែ​មួយ​គត់​របស់​វា​បាន​ផ្លាស់ប្ដូរ​ដោយ​​មូលហេតុ​មួយ​ចំនួន ។ វា​មាន​សារៈ​សំខាន់​ត្រូវ​​ប្រាកដថា រូបភាព​ GRUB ដែល​បាន​ដំឡើង​ធ្វើ​សមកាលកម្ម​ជា​មួយ​ម៉ូឌុល GRUB និង grub.cfg ។ សូម​ពិនិត្យ​មើល​ម្ដង​ទៀត ដើម្បី​ប្រាកដថា  GRUB ត្រូវ​បាន​សរសេរ​ទៅ​កាន់​ឧបករណ៍​ចាប់ផ្ដើម​ដែល​ត្រឹមត្រូវ ។
+Description-ko.UTF-8: GRUB 설치 장치:
+ 이전에 GRUB 부트로더를 설치했던 디스크가 이제 컴퓨터에 없거나, 어떤 이유에서든 고유 아이디가 바뀌었습니다. GRUB 코어 이미지가 GRUB 모듈 및 grub.cfg와 동기화하는 게 중요합니다. GRUB이 올바른 부팅 장치에 설치되도록 다시 확인하십시오.
+Description-lt.UTF-8: Įrenginiai „GRUB“ diegimui:
+ Anksčiau „GRUB“ paleidyklė buvo įdiegta į diską, kuris dabar nebeprieinamas arba kurio identifikatorius dėl kokių nors priežasčių pakeistas. Svarbu užtikrinti pagrindinio „GRUB“ atvaizdžio, „GRUB“ modulių ir „grub.cfg“ failo suderinamumą. Patikrinkite pasirinkimus dar kartą ir įsitikinkite, jog „GRUB“ paleidyklė bus įrašyta į reikiamus paleidimo įrenginius.
+Description-lv.UTF-8: GRUB instalēšanas ierīces:
+ GRUB palaidējs iepriekš bija uzinstalēts uz diska, kas vairs nav šeit, vai kaut kāda iemesla dēļ tika mainīts tā unikālais identifikators. Ir svarīgi nodrošināt, ka instalētais GRUB pamata attēls ir sinhrons ar GRUB moduļiem un grub.cfg. Lūdzu, vēlreiz pārliecinieties, ka GRUB ir uzrakstīts uz atbilstošām palaišanas ierīcēm.
+Description-mr.UTF-8: ग्रब अधिष्ठापना उपकरणे:
+ ग्रब आरंभ सूचक पूर्वी ज्या डिस्कवर अधिष्ठापित केला होता ती आता अस्तित्वात नाही, वा काही कारणास्तव तिचे विशिष्ट ओळखचिन्ह बदलले गेले आहे. अधिष्ठापित केलेली ग्रब गाभा प्रतिमा ग्रब मोड्यूल्स व grub.cfg यांच्याशी सुसंवादी राहणे महत्वाचे आहे. कृपया ग्रब सुयोग्य आरंभ उपकरणांवर लिहिला जात आहे याची पुन्हा खातरजमा करा.
+Description-nb.UTF-8: GRUB installasjonsenheter:
+ GRUB oppstartslasteren var tidligere installert på en disk som ikke lenger fins eller på en disk hvor den unike identifikatoren er endret av eller annen grunn. Det er viktig å være sikker på at det installerte GRUB-kjernebildet forblir i synk med GRUB-moduler og grub.cfg. Sjekk igjen at GRUB skrive til passende oppstartsenhet.
+Description-nl.UTF-8: Apparaten waarop GRUB moet komen:
+ Het GRUB opstartprogramma was voorheen geïnstalleerd op een schijf die niet langer aanwezig is, of waarvan de unieke identificatie om een of andere reden is veranderd. Het is belangrijk om ervoor te zorgen dat het geïnstalleerde image van de GRUB-kern gesynchroniseerd blijft met GRUB modules en grub.cfg. Controleer of GRUB wel naar de juiste opstartapparaten wordt geschreven.
+Description-no.UTF-8: GRUB installasjonsenheter:
+ GRUB oppstartslasteren var tidligere installert på en disk som ikke lenger fins eller på en disk hvor den unike identifikatoren er endret av eller annen grunn. Det er viktig å være sikker på at det installerte GRUB-kjernebildet forblir i synk med GRUB-moduler og grub.cfg. Sjekk igjen at GRUB skrive til passende oppstartsenhet.
+Description-pl.UTF-8: Urządzenia do instalacji GRUB-a:
+ Program rozruchowy GRUB był zainstalowany wcześniej na dysku który jest teraz nieobecny lub którego unikalny identyfikator zmienił się z jakiegoś powodu. Jest istotne, aby upewnić się, że główny obraz GRUB-a jest zsynchronizowany z modułami GRUB-a w grub.cfg. Proszę sprawdzić ponownie, czy GRUB jest zapisywany na właściwe urządzenia rozruchowe.
+Description-pt.UTF-8: dispositivos de instalação GRUB:
+ O boot loader do GRUB foi instalado num disco que não se encontra presente, ou então o seu identificador único foi alterado por alguma razão. É importante ter a certeza que a imagem core do GRUB se mantêm sincronizada com os módulos do GRUB e grub.cfg. Por favor verifique de novo para ter a certeza de que o GRUB é escrito nos dispositivos apropriados de arranque.
+Description-pt_BR.UTF-8: Instalar o GRUB nos dispositivos:
+ O carregador de inicialização GRUB foi instalado anteriormente em um disco que não está mais presente, ou seu identificador único foi modificado por alguma razão. É importante certificar-se de que a imagem principal do GRUB instalada está em sincronia com os módulos do GRUB e com o grub.cfg. Por favor, verifique novamente e esteja certo de que o GRUB está gravado nos dispositivos de inicialização apropriados.
+Description-ro.UTF-8: Dispozitive pentru a instala GRUB:
+ Încărcătorul de sistem GRUB a fost instalat pe un disc care nu mai este prezent, sau al cărui identificator unic a fost modificat dintr-un motiv oarecare. Este important să vă asigurați că imaginea GRUB rămâne sincronizată cu modulele GRUB și grub.cfg. Vă rugăm verificați din nou, pentru a vă asigura că GRUB este scris pe dispozitivul boot corect.
+Description-ru.UTF-8: Устройства, на которые устанавливается GRUB:
+ Системный загрузчик GRUB был установлен на диск, которого больше нет в системе, или по какой-то причине был изменён уникальный идентификатор. Важно убедиться, что установленный основной образ GRUB синхронизирован с модулями GRUB и grub.cfg. Проверьте ещё раз, что GRUB записан на правильные загрузочные устройства.
+Description-si.UTF-8: GRUB ස්ථාපන උපකරණ:
+ GRUB ආරම්භක පූරකය දැනට නොපවතින තැටියට ස්ථාපනය කර තිබී ඇත. හෝ එහි අනන්‍ය හැඳින්වීම කිසියම් හේතුවක් නිසා වෙනස් වී ඇත. ස්ථාපිත GRUB මූල පිළිබිඹුව GRUB මොඩියුල හා grub.cfg සමඟ සම්මුහුර්ත බව තහවුරු කරගැනීම වැදගත්වේ. කරුණාකර සුදුසු ආරම්භක උපකරණයන් හි GRUB ලියැවී ඇතිදැයි නැවත පිරික්සන්න.
+Description-sk.UTF-8: Zariadenia na inštaláciu GRUB:
+ Zavádzač GRUB bol predtým nainštalovaný na disk, ktorý sa už v systéme nenachádza alebo ktorého unikátny identifikátor bol z nejakého dôvodu zmenený. Je dôležité zaistiť, aby nainštalovaný základný obraz GRUB mal rovnakú verziu ako moduly GRUB a grub.cfg. Prosím pre istotu znova skontrolujte, že je GRUB zapisovaný do správnych zavádzacích zariadení.
+Description-sl.UTF-8: Namestitvene naprave za GRUB:
+ Zagonski nalagalnik GRUB je bil nameščen na disku, ki ni več prisoten ali se mu je spremenil enolični identifikator. Važno je, da so jedro GRUBa in moduli ter grub.cfg skladni. Preverite prosim, da je GRUB zapisan na pravilno zagonsko napravo.
+Description-sq.UTF-8: Paisjet GRUB install:
+ Ngarkuesi i ndezjes GRUB ishte më parë i instaluar në një disk që nuk është më i pranishëm, ose identifikuesi unik i të cilit ka ndryshuar për ndonjë arsye. Është e rëndësishme që të sigurohesh që imazhi i instaluar i GRUB core të qëndoroj në sinkronizim me modulet GRUB dhe grub.cfg. Të lutem kontollo përsëri që GRUB të shkruhet në paisjet e duhura të ndezjes.
+Description-sr.UTF-8: Уређаји за инсталирање GRUB-а:
+ GRUB је претходно био инсталиран на диску који не постоји, или чији се јединствени идентификациони број променио из неког разлога. Битно је да подаци GRUB-а буду синхронизовани са модулима и фајлом grub.cfg. Проверите да ли је GRUB инсталиран на одговарајућем уређају.
+Description-sr@latin.UTF-8: Uređaji za instaliranje GRUB-a:
+ GRUB je prethodno bio instaliran na disku koji ne postoji, ili čiji se jedinstveni identifikacioni broj promenio iz nekog razloga. Bitno je da podaci GRUB-a budu sinhronizovani sa modulima i fajlom grub.cfg. Proverite da li je GRUB instaliran na odgovarajućem uređaju.
+Description-sv.UTF-8: GRUB installationsenheter:
+ Uppstartshanteraren GRUB var tidigare installerad på en disk som inte längre finns tillgänglig eller vars unika identifikation har ändrats av någon anledning. Det är viktigt att säkerställa att den installerade GRUB-huvudavbildningen är korrekt i förhållande till GRUB-moduler och grub.cfg. Kontrollera återigen att GRUB är tillgänglig på rätt uppstartsenhet.
+Description-ta.UTF-8: க்ரப் நிறுவல் சாதனங்கள்: 
+ க்ரப் பூட் ஏற்றி முன்பு ஒரு வட்டில் பதியப்பட்டது; அந்த வட்டு இப்போது இல்லை அல்லது ஏனோ அதன் பிரத்யேக அடையாளம்காணி மாறிவிட்டது. க்ரப் கரு பிம்பம் க்ரப் மாட்யூல்கள் அல்லது grub.cfg உடன் ஒத்திசைவு இருப்பது அவசியம். பொருத்தமான பூட் சாதனங்களில் க்ரப் எழுதப்பட்டுள்ளது என மீண்டும் சோதித்து உறுதி செய்து கொள்க.
+Description-th.UTF-8: อุปกรณ์ที่จะติดตั้ง GRUB:
+ มีการติดตั้งบูตโหลดเดอร์ GRUB ก่อนหน้านี้ในดิสก์ที่ขณะนี้ไม่มีแล้ว หรือมี แต่หมายเลขประจำดิสก์ได้เปลี่ยนไปด้วยสาเหตุบางอย่าง จึงจำเป็นต้องทำให้แน่ใจว่าอิมเมจแกนกลางของ GRUB ที่ติดตั้งไว้นั้นยังมีข้อมูลตรงกับมอดูล GRUB ต่างๆ และกับ grub.cfg อยู่ กรุณาตรวจสอบอีกครั้งให้แน่ใจว่าจะเขียนข้อมูล GRUB ลงในอุปกรณ์บูตที่เหมาะสม
+Description-tr.UTF-8: GRUB kurulum aygıtları:
+ GRUB önyükleyici şu anda var olmayan ya da benzersiz tanımlayıcısı bir şekilde değişmiş olan bir diske kurulmuş durumda. Kurulu olan GRUB çekirdek görüntüsünün GRUB modülleri ve grub.cfg ile uyum içinde olduğundan emin olmak önemlidir. Bu nedenle GRUB'un doğru önyükleme aygıtlarına yazılmış olduğundan emin olun.
+Description-ug.UTF-8: GRUB ئورنىتىش ئۈسكۈنىسى:
+ GRUB قوزغىتىش يېتەكلىگۈچ يوقالغان دىسكىدىن بىرىگە ئورنىتىلغان ياكى ئۇنىڭ بىردىنبىر بەلگىسى مەلۇم سەۋەبلەردىن ئۆزگەرگەن. ئورنىتىلغان GRUB نىڭ يادرولۇق تەسۋىرى ۋە GRUB بۆلىكى شۇنداقلا grub.cfg نى قەدەمداشلاش  ناھايىتى مۇھىم. قايتا بىر قېتىم تەكشۈرۈپ GRUB نىڭ مۇۋاپىق قوزغىتىش ئۈسكۈنىسىگە ئورنىتىلغانلىقىغا كاپالەتلىك قىلىڭ.
+Description-uk.UTF-8: Дискові пристрої для встановлення GRUB:
+ Завантажувач GRUB раніше було встановлено на дисковий пристрій, що наразі відсутній, або його унікальний ідентифікатор з якихось причин було змінено. Важливо переконатися, що встановлене базове ядро GRUB відповідає наявним модулям та grub.cfg. Будь ласка, перевірте знову чи GRUB записано на відповідні завантажувальні дискові розділи.
+Description-vi.UTF-8: Những thiết bị cài đặt GRUB:
+ Trình nạp khởi động GRUB trước đây đã được cài đặt trên một đĩa không còn tồn tại, hay số định danh duy nhất của đĩa đó đã thay đổi vì lý do nào đó. Quan trọng là phải chắc chắn rằng ảnh lõi GRUB đã được cài còn đồng bộ với các mô-đun GRUB và grub.cfg. Vui lòng kiểm tra lại để chắc chắn rằng GRUB được ghi vào các thiết bị khởi động phù hợp.
+Description-zh_CN.UTF-8: GRUB 安装设备：
+ GRUB 引导器先前安装到了一个消失了的磁盘上，或者它的唯一标识符由于某些原因变化了。确保安装的 GRUB 核心映像和 GRUB 模块及 grub.cfg 的同步非常重要。请再次检查以确保 GRUB 安装到了适当的引导设备。
+Description-zh_TW.UTF-8: GRUB 安裝裝置：
+ GRUB 的開機程式先前安裝到一個消失的磁碟上，或者它的唯一標識符因某種原因改變。確保安裝的 GRUB 核心映像和 GRUB 模組及 grub.cfg 的同步是非常重要的。請再次檢查以確保 GRUB 安裝到適當的開機裝置。
+
+Template: grub-efi/partition_description
+Type: text
+Description: ${DEVICE} (${SIZE} MB; ${PATH}) on ${DISK_SIZE} MB ${DISK_MODEL}
+
+Template: grub-efi/install_devices_failed
+Type: boolean
+Default: false
+Description: Writing GRUB to boot device failed - continue?
+ GRUB failed to install to the following devices:
+ .
+ ${FAILED_DEVICES}
+ .
+ Do you want to continue anyway? If you do, your computer may not start up
+ properly.
+Description-ast.UTF-8: Fallu al escribir GRUB al preséu d'arranque - ¿siguir?
+ Falló GRUB al instalar nos siguientes preseos:
+ .
+ ${FAILED_DEVICES}
+ .
+ ¿Quies siguir igualmente? Si quies, el to ordenador podría nun arrancar bien.
+Description-be.UTF-8: Запіс GRUB на загрузкавую прыладу не ўдаўся - працягваць?
+ Не атрымалася ўсталяваць GRUB на наступныя прылады:
+ .
+ ${FAILED_DEVICES}
+ .
+ Вы жадаеце працягваць, не зважаючы на гэта? Калі працягнеце, ваш кампутар можа не запусціцца.
+Description-bg.UTF-8: Записването на GRUB върху устройството за начално зареждане не успя. Продължаване?
+ Опитът за инсталиране на GRUB на следните устройства беше неуспешен:
+ .
+ ${FAILED_DEVICES}
+ .
+ Желаете ли да продължите въпреки това? Ако го направите е възможно компютърът да не може да зареди операционна система.
+Description-ca.UTF-8: Ha fallat l'escriptura del GRUB al dispositiu. Voleu continuar?
+ El GRUB no s'ha pogut instaŀlar als dispositius següents:
+ .
+ ${FAILED_DEVICES}
+ .
+ Voleu continuar tot i això? Si ho feu, és possible que l'ordinador no arrenque correctament.
+Description-cs.UTF-8: Zápis GRUBu na zaváděcí zařízení selhal - pokračovat?
+ GRUB se nepodařilo nainstalovat na následující zařízení:
+ .
+ ${FAILED_DEVICES}
+ .
+ Chcete přesto pokračovat? Pokud ano, je možné, že počítač nemusí korektně nastartovat.
+Description-cy.UTF-8: Methwyd ysgrifennu GRUB i'r ddyfais ymgychwyn - parhau?
+ Methwyd sefydlu GRUB i'r dyfeisiau canlynol:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ydych am barhau beth bynnag? Os ydych, mae'n bosib na fydd eich cyfrifiadur yn dechrau'n gywir.
+Description-da.UTF-8: Skrivning af GRUB til opstartsenhed fejlede - vil du fortsætte?
+ Kunne ikke installere GRUB på de følgende enheder:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ønsker du at fortsætte alligevel? Hvis du fortsætter, kan din computer måske ikke starte korrekt op.
+Description-de.UTF-8: GRUB konnte nicht auf das Boot-Gerät geschrieben werden - fortfahren?
+ GRUB konnte nicht auf den folgenden Geräten installiert werden:
+ .
+ ${FAILED_DEVICES}
+ .
+ Wollen Sie trotzdem fortfahren? Falls ja, wird Ihr Rechner vielleicht nicht problemlos hochfahren.
+Description-dz.UTF-8:  GRUB བུཊི་ ཐབས་འཕྲུལ་ལུ་འབྲི་ནི་ འཐུས་ཤོར་འབྱུང་ཡོདཔ - འཕྲོ་མཐུད་དེ་འབད་ནི་ཨིན་ན?
+ GRUB འདི་ འོག་གི་ཐབས་འཕྲུལ་ཚུ་ནང་གཞི་བཙུགས་འབད་མ་ཚུགས་པས:
+ .
+ ${FAILED_DEVICES}
+ .
+ ག་དེ་འབད་རུང་ འཕྲོ་མཐུད་འབད་ནི་ཨིན་ན? འཕྲོ་མཐུད་འབད་བ་ཅིན་ ཁྱོད་ཀྱི་གློག་རིག་འདི་ལེགས་ཤོམ་སྦེ་འགོ་བཙུགས་མི་ཚུགས།
+Description-el.UTF-8: Η εγκατάσταση του GRUB στην συσκευή εκκίνησης απέτυχε - Συνέχεια;
+ Η εγκατάσταση του GRUB απέτυχε στις ακόλουθες συσκευές:
+ .
+ ${FAILED_DEVICES}
+ .
+ Θέλετε να συνεχίσετε παρόλα αυτά; Αν ναι, είναι πιθανόν ο υπολογιστής σας να μην μπορεί να εκκινήσει κανονικά.
+Description-eo.UTF-8: Skribado de GRUB al ekŝarga aparato malsukcesis - ĉu daŭrigi?
+ GRUB malsukcesis instali al la jenaj aparatoj:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ĉu vi volas daŭrigi iel ajn? Se jes, eble via komputilo ne ekŝargiĝu ĝuste.
+Description-es.UTF-8: La instalación de GRUB en el dispositivo de inicio ha fallado, ¿desea continuar?
+ No se pudo instalar GRUB en los siguientes dispositivos:
+ .
+ ${FAILED_DEVICES}
+ .
+ ¿Desea continuar de todos modos? Si lo hace, puede que su equipo no se inicie apropiadamente.
+Description-eu.UTF-8: Huts egin du GRUB abioko gailuan idaztean - jarraitu?
+ GRUBek huts egin du honako gailuetan instalatzean:
+ .
+ ${FAILED_DEVICES}
+ .
+ Jarraitzea nahi duzu dena den? Jarraituz gero, baliteke ordenagailua ongi ez abiaraztea.
+Description-fa.UTF-8: نصب GRUB روی ابزار بوت با شکست مواجه شد - ادامه می‌دهید؟
+ GRUB نتوانست که تجهیزات مورد نظر را نصب کند.
+ .
+ ${FAILED_DEVICES}
+ .
+ آیا شما می‌خواهید در هر حال ادامه دهید ؟ اگر ادامه دهید، ممکن است که کامپیوتر شما به طور مناسب باید بالا نیاید.
+Description-fi.UTF-8: GRUBin kirjoittaminen käynnistyslaitteelle epäonnistui. Jatketaanko?
+ GRUBia ei voitu asentaa seuraaville laitteille:
+ .
+ ${FAILED_DEVICES}
+ .
+ Valitse haluatko jatkaa tästä huolimatta. Jos jatkat, järjestelmä ei välttämättä käynnisty kunnolla.
+Description-fr.UTF-8: Échec de l'installation de GRUB sur le périphérique d'amorçage. Continuer ?
+ GRUB n'a pas pu être installé sur les périphériques suivants :
+ .
+ ${FAILED_DEVICES}
+ .
+ Veuillez confirmer si vous souhaitez continuer malgré le risque d'un démarrage incorrect de la machine.
+Description-gl.UTF-8: Produciuse un erro ao escribir GRUB no dispositivo de arranque. Quere continuar?
+ Non se puido instalar GRUB nos seguintes dispositivos:
+ .
+ ${FAILED_DEVICES}
+ .
+ Quere continuar de todas maneiras? Se o fai, pode que a súa computadora non poida iniciar correctamente.
+Description-gu.UTF-8: GRUB ને બૂટ ઉપકરણમાં લખવાનું નિષ્ફળ ગયું - ચાલુ રાખશો?
+ GRUB નીચેના ઉપકરણોમાં સ્થાપિત થવામાં નિષ્ફળ ગયું:
+ .
+ ${FAILED_DEVICES}
+ .
+ તમે તેમ છતાં આગળ વધવા માંગો છો? જો તમે તેમ કરશો તો, તમારું કોમ્પ્યુટર કદાચ યોગ્ય રીતે શરુથશે નહી.
+Description-he.UTF-8: כשלון בכתיבת GRUB להתקן האתחול - להמשיך?
+ כשלון בהתקנת GRUB בהתקנים הבאים:
+ .
+ ${FAILED_DEVICES}
+ .
+ האם ברצונך להמשיך בכל זאת? אם כן, מחשבך עלול לא לאתחל כהלכה.
+Description-hr.UTF-8: Instalacija GRUB-a nije uspjela - želite li nastaviti?
+ GRUB nije uspio instalaciju na sljedeće uređaje:
+ .
+ ${FAILED_DEVICES}
+ .
+ Želite li ipak nastaviti? Ako to napravite, vaše računalo se možda neće moći uredno pokrenuti.
+Description-hu.UTF-8: Nem sikerül a GRUB-ot a rendszerlemezre írni - folytassuk?
+ Nem sikerült a GRUB-ot a következő eszközökre telepíteni:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ennek ellenére folytatni akarod? Ha folytatod, lehet, hogy a számítógéped nem fog elindulni.
+Description-id.UTF-8: Gagal menulis GRUB ke piranti boot -- lanjutkan?
+ Gagal memasang GRUB pada piranti berikut ini:
+ .
+ ${FAILED_DEVICES}
+ .
+ Anda yakin akan lanjut terus? Jika ya, komputer Anda mungkin tidak dapat beroperasi.
+Description-is.UTF-8: Uppsetning GRUB á ræsitæki mistókst. Halda áfram?
+ Uppsetning GRUB mistókst á eftirfarandi tækjum:
+ .
+ ${FAILED_DEVICES}
+ .
+ Viltu samt halda áfram? Ef þú gerir það er ekki víst að tölvan þín ræsist aftur eðlilega.
+Description-it.UTF-8: Scrittura di GRUB sul device di avvio non riuscita. Continuare?
+ L'installazione di GRUB sui seguenti device non è riuscita:
+ .
+ ${FAILED_DEVICES}
+ .
+ Si vuole continuare? Continuando, il computer potrebbe non avviarsi più correttamente.
+Description-ja.UTF-8: 起動デバイスへの GRUB の書き込みが失敗しました - 続行しますか?
+ GRUB は以下のデバイスへのインストールに失敗しました:
+ .
+ ${FAILED_DEVICES}
+ .
+ とにかく続行しますか? その場合、コンピュータが正常に起動しないかもしれません。
+Description-kk.UTF-8: GRUB-ты жүктелу құрылғысына жазу сәтсіз - жалғастыру керек пе?
+ GRUB келесі құрылғыларға орнату сәтсіз аяқталды:
+ .
+ ${FAILED_DEVICES}
+ .
+ Бәрібір жалғастыруды қалайсыз ба? Нәтижесінде компьютеріңіз дұрыс жүктелмеуі мүмкін.
+Description-km.UTF-8: បាន​បរាជ័យ​ក្នុង​ការ​សរសេរ​ GRUB ទៅ​​ឧបករណ៍​ចាប់ផ្ដើម បន្ត ?
+ GRUB បាន​បរាជ័យ​ក្នុង​ការ​ដំឡើង​ឧបករណ៍​ដូ​ចខាង​ក្រោម ៖
+ .
+ ${FAILED_DEVICES}
+ .
+ អញ្ចឹង តើ​អ្នក​ចង់​បន្ត​ដែរ​ឬទេ ? ប្រសិន​បើ​អ្នក​បន្ត កុំព្យូទ័រ​របស់​អ្នក​មិន​អាច​ចាប់ផ្ដើម​បាន​ត្រឹមត្រូវ​ទេ ។
+Description-ko.UTF-8: GRUB을 부팅 장치에 쓰는데 실패했습니다. 계속 하시겠습니까?
+ 다음 장치에 대해 GRUB 설치가 실패했습니다:
+ .
+ ${FAILED_DEVICES}
+ .
+ 그래도 계속 하시겠습니까? 계속 하면 컴퓨터가 제대로 시작하지 않을 수도 있습니다.
+Description-lt.UTF-8: „GRUB“ įrašyti į paleidimo įrenginį nepavyko. Ar tęsti?
+ Nepavyko „GRUB“ įdiegti į šiuos įrenginius:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ar tęsti, nepaisant problemos? Jos neišsprendus, kompiuteris gali tinkamai nepasileisti.
+Description-lv.UTF-8: Neizdevās ierakstīt GRUB uz palaišanas ierīces — turpināt?
+ Neizdevās uzinstalēt GRUB uz šīm ierīcēm:
+ .
+ ${FAILED_DEVICES}
+ .
+ Vai tomēr vēlaties turpināt? Ja tā, dators varētu nespēt pareizi palaisties.
+Description-mr.UTF-8: आरंभ उपकरणावर ग्रब लिहिणे फसले - सुरू ठेवायचे?
+ खालील उपकरणांवर ग्रब अधिष्ठापित करणे असफल झाले:
+ .
+ ${FAILED_DEVICES}
+ .
+ तुम्हाला तरीही पुढे जायचेय? असे केल्यास, तुमचा संगणक कदाचित व्यवस्थित सुरू होऊ शकणार नाही.
+Description-nb.UTF-8: Klarte ikke skrive GRUB til oppstartsenhet - fortsette?
+ Klarte ikke installere GRUB på følgende enheter:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ønsker du å fortsette likevel? Hvis du fortsetter, vil kanskje ikke din datamaskin starte opp skikkelig.
+Description-nl.UTF-8: Schrijven van GRUB naar opstartapparaat mislukt. Doorgaan?
+ Het installeren van GRUB op de volgende apparaten is mislukt: 
+ .
+ ${FAILED_DEVICES}
+ .
+ Wilt u desondanks verder gaan? Verder gaan kan ervoor zorgen dat uw computer niet meer goed opstart.
+Description-no.UTF-8: Klarte ikke skrive GRUB til oppstartsenhet - fortsette?
+ Klarte ikke installere GRUB på følgende enheter:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ønsker du å fortsette likevel? Hvis du fortsetter, vil kanskje ikke din datamaskin starte opp skikkelig.
+Description-pl.UTF-8: Zapisywanie GRUB-a na urządzenia rozruchowe nie powiodło się - kontynuować?
+ Nie powiodło się zainstalowanie GRUB-a na następujących urządzeniach:
+ .
+ ${FAILED_DEVICES}
+ .
+ Czy kontynuować mimo to? Jeśli tak, ten komputer może nie uruchomić się poprawnie.
+Description-pt.UTF-8: A escrita do GRUB para o dispositivo de arranque falhou - continuar?
+ A instalação do GRUB falhou nos seguintes dispositivos:
+ .
+ ${FAILED_DEVICES}
+ .
+ Pretende continuar de qualquer modo? Em caso afirmativo, o seu computador pode não arrancar em condições.
+Description-pt_BR.UTF-8: A gravação do GRUB no dispositivo de inicialização falhou - continuar?
+ Falha ao instalar o GRUB nos seguintes dispositivos:
+ .
+ ${FAILED_DEVICES}
+ .
+ Você deseja continuar de qualquer maneira? Se você continuar, seu computador talvez não inicialize corretamente.
+Description-ro.UTF-8: Scrierea GRUB pe dispozitivul boot a eșuat. Se continuă?
+ Instalarea GRUB pe următoarele dispozitive a eșuat:
+ .
+ ${FAILED_DEVICES}
+ .
+ Doriți să continuați oricum? Dacă da, este posibil ca sistemul să nu pornească corespunzător.
+Description-ru.UTF-8: Не удалось записать GRUB на загрузочное устройство -- продолжить?
+ Не удалось установить GRUB на следующие устройства:
+ .
+ ${FAILED_DEVICES}
+ .
+ Продолжить, не смотря на это? Возможно, не удастся загрузить компьютер.
+Description-si.UTF-8: GRUB ආරම්භක උපකරණය ලිවීම අසාර්ථකයි - ඉදිරියට?
+ GRUB පහත උපකරණ ස්ථාපනයෙහි අසාර්ථක විය:
+ .
+ ${FAILED_DEVICES}
+ .
+ ඔබට කෙසේ හෝ ඉදිරියට යෑමට ඇවැසිද? එසේ නම් ඔබේ පරිගණකය නිසිපරිදි ආරම්භ නොවනු ඇත.
+Description-sk.UTF-8: Zápis GRUBu do zavádzacieho zariadenia zlyhal – pokračovať?
+ Inštalácia GRUB zlyhala na týchto zariadeniach:
+ .
+ ${FAILED_DEVICES}
+ .
+ Chcete napriek tomu pokračovať? Ak áno, môže sa stať, že váš počítač nenaštartuje správne.
+Description-sl.UTF-8: Napaka pri pisanju na zagonsko napravo za GRUB. Želite nadaljevati?
+ Napaka pri nameščanju GRUBa na sledeče naprave:
+ .
+ ${FAILED_DEVICES}
+ .
+ Želite vseeno nadaljevati? V primeru, da boste nadaljevali se računalnik mogoče ne bo pravilno zagnal.
+Description-sq.UTF-8: Shkrimi i GRUP për të ndezur paisjen dvshtoi - do të vazhdoni?
+ GRUB nuk arriti të instaloj paisjet në vijim:
+ .
+ ${FAILED_DEVICES}
+ .
+ Dëshironi të vazhdoni gjithsesi? Nëse po, kompjuteri juaj nuk do të filloj siç duhet.
+Description-sr.UTF-8: Инсталација GRUB-а није успела - наставити?
+ Инсталација GRUB-а није успела на следећим уређајима:
+ .
+ ${FAILED_DEVICES}
+ .
+ Да ли желите да наставите у сваком случају?  Ако наставите, ваш рачунар се можда неће добро покренути.
+Description-sr@latin.UTF-8: Instalacija GRUB-a nije uspela - nastaviti?
+ Instalacija GRUB-a nije uspela na sledećim uređajima:
+ .
+ ${FAILED_DEVICES}
+ .
+ Da li želite da nastavite u svakom slučaju?  Ako nastavite, vaš računar se možda neće dobro pokrenuti.
+Description-sv.UTF-8: Skriva GRUB till uppstartsenhet misslyckades - fortsätta?
+ GRUB kunde inte installeras på följande enheter:
+ .
+ ${FAILED_DEVICES}
+ .
+ Vill du fortsätta i alla fall? Det kan innebära att systemet inte kan starta korrekt.
+Description-ta.UTF-8: பூட் சாதனத்துக்கு க்ரப் ஐ எழுதுவது தோவியடைந்தது - தொடரலாமா?
+ பின் வரும் சாதனங்களில் க்ரப் நிறுவுதல் தோல்வியடைந்தது:
+ .
+ ${FAILED_DEVICES}
+ .
+ எப்படியும் தொடர வேண்டுமா? தொடர்ந்தால் உங்கள் கணினி சரியாக துவங்க முடியாமல் போகலாம்.
+Description-th.UTF-8: เขียน GRUB ลงในอุปกรณ์บูตไม่สำเร็จ - ดำเนินการต่อไปหรือไม่?
+ ติดตั้ง GRUB ลงในอุปกรณ์ต่อไปนี้ไม่สำเร็จ:
+ .
+ ${FAILED_DEVICES}
+ .
+ คุณยังคงต้องการดำเนินการต่อไปหรือไม่? ถ้าทำต่อ เครื่องของคุณอาจบูตไม่ขึ้นได้
+Description-tr.UTF-8: GRUB'u önyükleme aygıtına yazma işlemi başarısız oldu. Yine de devam edilsin mi?
+ Aşağıdaki aygıtlara GRUB kurulumu yapılamadı:
+ .
+ ${FAILED_DEVICES}
+ .
+ Yine de devam edilsin mi? Devam edilirse bilgisayarınız düzgün başlayamayabilir.
+Description-ug.UTF-8: GRUB نى قوزغىتىش ئۈسكۈنىسىگە يازالمىدى - داۋاملاشتۇرامدۇ؟
+ GRUB نى تۆۋەندىكى ئۈسكۈنىگە ئورنىتالمىدى:
+ .
+ ${FAILED_DEVICES}
+ .
+ داۋاملاشتۇرۇۋېرەمسىز؟ ئەگەر مۇشۇنداق قىلسىڭىز، كومپيۇتېرىڭىز توغرا قوزغىلالماسلىقى مۇمكىن.
+Description-uk.UTF-8: Не вдалося записати GRUB до завантажувального пристрою. Продовжити?
+ Не вдалося встановити GRUB до наступних дискових пристроїв:
+ .
+ ${FAILED_DEVICES}
+ .
+ Ви всеодно бажаєте продовжити? Не виключено, що ваш комп'ютер не зможе завантажитися нормально.
+Description-vi.UTF-8: Việc ghi GRUB vào thiết bị khởi động bị lỗi - tiếp tục không?
+ GRUB gặp lỗi khi cài đặt vào những thiết bị sau đây:
+ .
+ ${FAILED_DEVICES}
+ .
+ Bạn vẫn muốn tiếp tục không? Nếu có thì máy tính có thể không khởi động được.
+Description-zh_CN.UTF-8: 将 GRUB 写入引导设备失败 - 要继续吗？
+ GRUB 安装到如下设备时失败。
+ .
+ ${FAILED_DEVICES}
+ .
+ 仍然想要继续？如果这样，您的计算机可能不能正常启动。
+Description-zh_TW.UTF-8: 將 GRUB 寫入開機裝置失敗了。是否繼續？
+ 在將 GRUB 安裝至以下裝置時失敗了：
+ .
+ ${FAILED_DEVICES}
+ .
+ 是否無論如何仍然繼續？但這樣話，您的電腦可能會無法正常開機。
+
+Template: grub-efi/install_devices_empty
+Type: boolean
+Default: false
+Description: Continue without installing GRUB?
+ You chose not to install GRUB to any devices. If you continue, the boot
+ loader may not be properly configured, and when this computer next starts
+ up it will use whatever was previously configured. If there is an
+ earlier version of GRUB 2 in the EFI system partition, it may be unable to load
+ modules or handle the current configuration file.
+ .
+ If you are already using a different boot loader and want to carry on
+ doing so, or if this is a special environment where you do not need a boot
+ loader, then you should continue anyway. Otherwise, you should install
+ GRUB somewhere.
+
+Template: grub2/kfreebsd_cmdline
+Type: string
+Description: kFreeBSD command line:
+ The following kFreeBSD command line was extracted from /etc/default/grub or the
+ `kopt' parameter in GRUB Legacy's menu.lst. Please verify that it is correct,
+ and modify it if necessary. The command line is allowed to be empty.
+Description-ast.UTF-8: Linia comandos kFreeBSD:
+ La siguiente llinia de comandu kFreeBSD salió de /etc/default/grub o del parámetru `kopt' nel menú Legacy GRUB menu.lst. Por favor, comprueba que ye correuto, y modificalo si ye necesario. La lliniea de comandu puede tar erma.
+Description-be.UTF-8: Радок камандаў для ядра kFreeBSD:
+ Гэты радок камандаў для kFreeBSD узяты з файлу /etc/default/grub або з параметру `kopt' у файле наладак (menu.lst) папярэдняй версіі GRUB (Legacy). Калі ласка, пераканайцеся, што каманды запісаныя правільна, або папраўце іх, калі трэба. Гэты радок камандаў можа быць пустым.
+Description-bg.UTF-8: Команден ред за kFreeBSD:
+ Следния команден ред за зареждане на kFreeBSD беше извлечен от /etc/default/grub или от параметъра „kopt“ от файла menu.lst на стария GRUB. Проверете го и ако е нужно го коригирайте. Допустимо е командният ред да бъде празен.
+Description-ca.UTF-8: Línia d'ordres de kFreeBSD:
+ La línia d'ordres de kFreeBSD següent ha sigut extreta de /etc/default/grub o del paràmetre «kopt» del fitxer menu.lst del GRUB Legacy. Verifiqueu que és correcta, i modifiqueu-la si és necessari. La línia d'ordres pot ser buida.
+Description-cs.UTF-8: Parametry pro kFreeBSD:
+ Následující řádka s parametry pro kFreeBSD byla získána ze starého souboru menu.lst z parametru „kopt“ nebo ze souboru /etc/default/grub. Zkontrolujte prosím, zda jsou parametry v pořádku a případně je upravte do požadované podoby. Řádka s parametry může být i prázdná.
+Description-cy.UTF-8: Llinell orchymyn kFreeBSD:
+ Mae'r llinell orchymyn kFreeBSD canlynol wedi ei dynnu o /etc/default/grub neu'r paramedr 'kopt' yn ffeil menu.lst GRUB etifeddol. Gwiriwch fod hyn yn gywir a newidwch os oes angen. Caniateir i'r linell orchymyn fod yn wag.
+Description-da.UTF-8: Kommandolinje for kFreeBSD:
+ Den følgende kommandolinje i kFreeBSD blev udtrukket fra /etc/default/grub eller fra parameteren `kopt' i GRUB Legacys menu.lst. Verificer venligst at den er korrekt, og ændre den om nødvendigt. Kommandolinjen må være tom.
+Description-de.UTF-8: Befehlszeile für kFreeBSD:
+ Die folgende kFreeBSD-Befehlszeile wurde aus /etc/default/grub oder dem Parameter »kopt« in der Datei menu.lst von GRUB Legacy extrahiert. Bitte überprüfen Sie, ob diese korrekt ist und passen Sie sie an, wenn das erforderlich ist. Diese Befehlszeile darf leer sein.
+Description-dz.UTF-8: kFreeBSD བརྡ་བཀོད་གྲལ་ཐིག་:
+ འོག་གི་  kFreeBSD བརྡ་བཀོད་གྲལ་ཐིག་འདི་ /etc/default/grub or the `kopt' parameter in GRUB Legacy's menu.lst ལས་ ཕྱིར་འདོན་འབད་འབདཝ་ཨིན། འདི་ངེས་དེན་ཨིནམ་བདེན་སྦྱོར་འབད་ཞིནམ་ལས་ དགོས་མཁོ་ཡོད་པ་ཅིན་ ལེགས་བཅོས་འབད། བརྡ་བཀོད་གྲལ་ཐིག་འདི་ སྟོངམ་ཨིན་རུང་བཏུབ།
+Description-el.UTF-8: Γραμμή εντολών kFreeBSD:
+ Η επόμενη γραμμή εντολών του kFreeBSD έχει εξαχθεί από το αρχείο /etc/default/grub ή από την παράμετρο `kopt' στο αρχείο menu.lst του GRUB Legacy.  Παρακαλώ επιβεβαιώστε ότι είναι ορθή και τροποποιήστε την αν είναι απαραίτητο. Η γραμμή επιτρέπεται να είναι κενή.
+Description-eo.UTF-8: Ordon-linio de kFreeBSD:
+ La jena linuksa komand-linio de kFreeBSD estas elprenita el /etc/default/grub aŭ el la parametro 'kopt' en la menu.lst de malaktuala GRUB. Bonvolu kontroli ĉu ĝi estas korekta, kaj modifu ĝin laŭ neceso. Estas permesate ke la komand-linio estu malplena.
+Description-es.UTF-8: Línea de órdenes de kFreeBSD:
+ La siguiente línea de órdenes de kFreeBSD se extrajo del fichero «/etc/default/grub» o del parámetro «kopt» en el fichero «menu.lst» de la versión anterior de GRUB. Compruebe que es correcta y modifíquela si es necesario. La línea de órdenes se puede dejar en blanco.
+Description-eu.UTF-8: KFreeBSD-ko komando-lerroa:
+ KFreeBSD-ko komando-lerro hau /etc/default/grub edo GRUB zaharraren menu.lst fitxategiko 'kopt' parametrotik atera da. Egiaztatu zuzena dela, eta eraldatu behar izanez gero. Komando-lerroa hutsik egotea baimenduta dago.
+Description-fa.UTF-8: خط فرمان kFreeBSD:
+ خط فرمان kFreeBSD ذیل از /etc/default/grub یا پارامتر های `kopt' در فایل menu.lst از گراب قدیمی استخراج شده است. لطفاً صحت آن را بررسی کنید، و در صورت لزوم آن را تغییردهید. این خط فرمان می‌تواند خالی باشد.
+Description-fi.UTF-8: kFreeBSD:n komentorivi:
+ GRUBin aiemman version tiedostosta menu.lst parametrista ”kopt” tai tiedostosta /etc/default/grub löydettiin seuraava kFreeBSD:n komentorivi. Varmista, että se on kunnossa ja muuta sitä tarvittaessa. Komentorivin on sallittua myös olla tyhjä.
+Description-fr.UTF-8: Ligne de commande de kFreeBSD :
+ La ligne de commande de kFreeBSD suivante a été récupérée via le fichier /etc/default/grub ou le paramètre « kopt » du fichier menu.lst utilisé par la version originelle de GRUB. Veuillez contrôler qu'elle est correcte et la modifier si nécessaire. Cette ligne de commande peut être vide.
+Description-gl.UTF-8: Liña de comando de kFreeBSD:
+ A seguinte liña de comando de kFreeBSD sacouse de /etc/default/grub, ou do parámetro «kopt» no ficheiro menu.lst de GRUB Legacy. Verifique que sexa correcta e modifíquea de ser preciso. A liña de comando pódese deixar baleira.
+Description-gu.UTF-8: kFreeBSD આદેશ:
+ નીચેનાં kFreeBSD આદેશ /etc/default/grub અથવા GRUB પરંપરાગત menu.lst ના `kopt' પરિમાણમાંથી નીકાળવામાં આવ્યા છે. મહેરબાની કરી ખાતરી કરો કે એ સાચા છે, અને જરુરી હોય તો તેને બદલો. આદેશ ખાલી રાખવાનું માન્ય છે.
+Description-he.UTF-8: שורת הפקודה של kFreeBSD:
+ שורת פקודת kFreeBSD הבאה נשלפה מ-‎/etc/default/grub או מפרמטר'kopt' ב-menu.lst הישן של GRUB. בבקשה לוודא ששורת פקודה זו נכונה ועדכן אותה אם צריך. ניתן להשאיר שורת פקודה זו ריקה.
+Description-hr.UTF-8: kFreeBSD naredbeni redak:
+ Ovaj naredbeni redak za kFreeBSD kernel je izvađen iz /etc/default/grub ili iz parametra 'kopt' u GRUB Legacy datoteci menu.lst. Molim provjerite je li ispravan, i ako je potrebno uredite ga. Naredbeni redak smije biti prazan.
+Description-hu.UTF-8: kFreeBSD parancssor:
+ A következő kFreeBSD parancssor az /etc/default/grub vagy a régi GRUB menu.lst fájljában lévő `kopt' paraméterből származik. Kérlek ellenőrizd, hogy helyes-e, és módosítsd, ha szükséges. A parancssor lehet üres is.
+Description-id.UTF-8: Baris perintah kFreeBSD:
+ Baris perintah kFreeBSD berikut ini disadur dari /etc/default/grub atau parameter 'kopt' di menu.lst pada GRUB jadul. Pastikan kebenarannya dan suntinglah bila perlu. Baris perintahnya diperbolehkan dikosongi.
+Description-is.UTF-8: kFreeBSD skipanalína:
+ Eftirfarandi kFreeBSD skipanalína fannst í /etc/default/grub eða í `kopt' viðfanginu í eldri GRUB menu.lst. Gakktu úr skugga um að þetta sé rétt og breyttu því ef það er nauðsynlegt. Skipanalínan má vera auð.
+Description-it.UTF-8: Riga di comando kFreeBSD:
+ La seguente riga di comando kFreeBSD è stata estratta da /etc/default/grub oppure dal parametro "kopt" presente nel file menu.lst di GRUB Legacy. Controllare che sia corretta e modificarla se necessario. La riga di comando può essere vuota.
+Description-ja.UTF-8: kFreeBSD コマンドライン:
+ 以下の kFreeBSD のコマンドラインは、/etc/default/grub か GRUB Legacy の menu.lst 上の「kopt」パラメータから取得されています。これが正しいものであるかを確認して、必要であれば修正してください。コマンドラインは空でも構いません。
+Description-kk.UTF-8: kFreeBSD командалық жолы:
+ Келесі kFreeBSD командасы /etc/default/grub ішінен не GRUB Legacy menu.lst ішіндегі `kopt' параметрінен алынды. Оның дұрыстығын тексеріп, керек болса, өзгертіңіз. Бұл командалық жол бос болса да болады.
+Description-km.UTF-8: ពាក្យ​បញ្ជា kFreeBSD ៖
+ ពាក្យ​បញ្ជា kFreeBSD ដូច​ខាង​ក្រោម​ត្រូវ​បាន​ដកស្រង់​ចេញ​ពី /etc/default/grub ឬ menu.lst ចាស់ៗ​នៅ​ក្នុង GRUB ។ សូម​ផ្ទៀងផ្ទាត់​ថា​វា​ត្រឹមត្រូវ ។ ពាក្យ​បញ្ជា​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ទទេ ។
+Description-ko.UTF-8: kFreeBSD 명령어:
+ 다음 kFreeBSD 명령어를 /etc/default/grub 파일 또는 GRUB 구버전의 menu.lst의 `kopt' 파라미터에서 뽑아냈습니다. 명령어가 올바른지 확인하고 필요하다면 수정하십시오. 명령어는 비워 둘 수도 있습니다.
+Description-lt.UTF-8: „kFreeBSD“ komandos eilutė:
+ Iš „/etc/default/grub“ failo arba senosios „GRUB“ konfigūraciniame faile „menu.lst“ nurodyto „kopt“ parametro išrinkta žemiau pateikta „kFreeBSD“ komandos eilutė. Patikrinkite, ar ji tinkama ir jei reikia, ją patikslinkite. Komandos eilutė gali būti ir tuščia.
+Description-lv.UTF-8: kFreeBSD komandrinda:
+ Sekojošā kFreeBSD komandrinda tika izvilkta no /etc/default/grub vai `kopt' parametra GRUB mantojuma menu.lst. Lūdzu, pārliecinieties, ka tā ir pareiza un, ja vajag, mainiet to. Komandrinda drīkst būt tukša.
+Description-mr.UTF-8: केफ्रीबीएसडी आदेश ओळ:
+ पुढील केफ्रीबीएसडी आदेश ओळ /etc/default/grub ग्रब लीगसीच्या menu.lst मधील `kopt' घटकमूल्यामधून मिळवली आहे. कृपया ती योग्य आहे का, याची खातरजमा करा व आवश्यकता असल्यास बदल करा. आदेश ओळ रिकामी ठेवण्याची अनुमती असते.
+Description-nb.UTF-8: Kommandolinje i kFreeBSD:
+ Den følgende kFreeBSD-kommandolinjen ble trukket ut fra /etc/default/grub eller fra parameteren `kopt' i GRUB Legacys menu.lst. Verifiser at den er korrekt, og endre den om nødvendig. Det er lov at kommandolinjen er tom.
+Description-nl.UTF-8: kFreeBSD-commandoregel:
+ De volgende kFreeBSD-commandoregel is gebaseerd op /etc/default/grub of op de 'kopt'-parameter, gevonden in het bestand menu.lst van GRUB oude-stijl. Gelieve deze op correctheid te controleren en indien nodig aan te passen. De commandoregel mag leeg zijn.
+Description-no.UTF-8: Kommandolinje i kFreeBSD:
+ Den følgende kFreeBSD-kommandolinjen ble trukket ut fra /etc/default/grub eller fra parameteren `kopt' i GRUB Legacys menu.lst. Verifiser at den er korrekt, og endre den om nødvendig. Det er lov at kommandolinjen er tom.
+Description-pl.UTF-8: Wiersz poleceń do kFreeBSD:
+ Następujące polecenie do kFreeBSD zostało wyodrębnione z /etc/default/grub lub z parametru "kopt" w menu.lst GRUB-a Legacy. Proszę sprawdzić czy jest właściwe i zmodyfikować go, jeśli to konieczne. Wiersz z poleceniem może być pusty.
+Description-pt.UTF-8: linha de comandos kFreeBSD:
+ A seguinte linha de comandos kFreeBSD foi extraída a partir de /etc/default/grub ou do parâmetro `kopt' no menu.lst do GRUB Legacy. Por favor verifique que está correcta, e modifique se necessário. É permitido que a linha esteja vazia.
+Description-pt_BR.UTF-8: Linha de comando kFreeBSD:
+ A linha de comando kFreeBSD a seguir foi extraída de /etc/default/grub ou do parâmetro 'kopt' do menu.lst do GRUB Legado. Por favor, verifique se ela está correta, e modifique-a se necessário. A linha de comando pode ser vazia.
+Description-ro.UTF-8: Linia de comandă kFreeBSD:
+ Această linie de comandă kFreeBSD a fost extrasă din /etc/default/grub sau parametrul „kopt” din fișierul menu.lst al vechiului GRUB. Verificați corectitudinea acesteia și modificați-o, dacă este nevoie. Linia de comandă poate fi goală.
+Description-ru.UTF-8: Командная строка kFreeBSD:
+ Представленная ниже строка команд kFreeBSD была извлечена из /etc/default/grub или параметра «kopt» файла menu.lst старой версии GRUB. Проверьте, что всё правильно, или измените её, если требуется. Также командная строка может быть пустой.
+Description-si.UTF-8: kFreeBSD විධාන රේඛාව:
+ පහත kFreeBSD විධානය /etc/default/grub හෝ පැරණි GRUB හි menu.lst හි 'kopt' පරාමිතියෙන් උපුටාගන්නා ලදී. කරුණාකර එය නිවැරදි දැයි තහවුරු කරන්න, ඇවැසිනම් වෙනස්කම් කරන්න. විධාන රේඛාව හිස්ව පැවතීමට ඉඩදෙයි.
+Description-sk.UTF-8: Príkazový riadok kFreeBSD:
+ Nasledujúci príkazový riadok kFreeBSD bol získaný z /etc/default/grub alebo z parametra 'kopt' z menu.lst starého GRUB (Legacy). Skontrolujte prosím jeho správnosť a prípadne ho upravte. Príkazový riadok môže byť aj prázdny.
+Description-sl.UTF-8: Ukazna vrstica kFreeBSD:
+ Sledeči ukaz za kFreeBSD je vzet iz datoteke /etc/default/grub ali iz parametra `kopt' v datoteki  menu.lst sistema GRUB Legacy.  Preverite prosim, da je točen in ga po potrebi popravite. Ukazna vrstica je lahko tudi prazna.
+Description-sq.UTF-8: Linja komanduese kFreeBSD
+ Linja komanduese kFreeBSD e mëposhtme u ekstraktua nga /etc/default/grub ose parametri `kopt'në menu.lst të GRUB të trashëguar. Të lutem verifiko që ajo është korrekte, dhe modifikoje nëse do jetë e nevojshme. Kjo linjë komanduese lejohet të jetë bosh.
+Description-sr.UTF-8: kFreeBSD командна линија:
+ Ова линија намењена кFreeBSD keрнелу је из /etc/default/grub (GRUB 2) или из „kopt“ параметра датотеке menu.lst (GRUB Legacy). Проверите да ли је линија исправна и ако треба поправите је. Линија иначе, може остати и празна.
+Description-sr@latin.UTF-8: kFreeBSD komandna linija:
+ Ova linija namenjena kFreeBSD kernelu je iz /etc/default/grub (GRUB 2) ili iz „kopt“ parametra datoteke menu.lst (GRUB Legacy). Proverite da li je linija ispravna i ako treba popravite je. Linija inače, može ostati i prazna.
+Description-sv.UTF-8: Kommandorad för kFreeBSD:
+ Följande kFreeBSD-kommandorad hämtades från /etc/default/grub eller "kopt"-parametern i gamla GRUB:s menu.lst. Verifiera att den är korrekt och modifiera den om nödvändigt. Kommandoraden kan vara tom.
+Description-ta.UTF-8: கேப்ரீபிஎஸ்டி கட்டளை வரி:
+ பின் வரும் கேப்ரீபிஎஸ்டி கட்டளை வரி /etc/default/grub இலிருந்து அல்லது க்ரப் இன் பாரம்பரிய menu.lst இன் `kopt' அளபுருவிலிருந்து பெறப்பட்டது. இது சரியா என்று சோதித்து தேவையானால் மற்றவும். இந்த கட்டளை வரி காலியாக இருக்க அனுமதி உண்டு.
+Description-th.UTF-8: พารามิเตอร์สำหรับบูต kFreeBSD:
+ พารามิเตอร์สำหรับบูต kFreeBSD ต่อไปนี้ดึงออกมาจาก /etc/default/grub หรือพารามิเตอร์ `kopt' ใน menu.lst ของ GRUB รุ่นเก่า กรุณาตรวจสอบว่าค่านี้ถูกต้องหรือไม่ และกรุณาแก้ไขถ้าจำเป็น พารามิเตอร์นี้สามารถปล่อยเป็นค่าว่างเปล่าได้
+Description-tr.UTF-8: kFreeBSD komut satırı:
+ Aşağıdaki kFreeBSD komut satırı /etc/default/grub'dan ya da eski GRUB menu.lst dosyasındaki 'kopt' parametresinden alınmıştır. Lütfen doğruluğundan emin olun ve gerekirse düzeltin. Komut satırı boş bırakılabilir.
+Description-ug.UTF-8: kFreeBSD بۇيرۇق قۇرى:
+ تۆۋەندىكى kFreeBSD بۇيرۇق قۇرى /etc/default/grub ياكى GRUB Legacy نىڭ menu.lst دىكى `kopt' پارامېتىرىدىن ئاجرىتىدۇ. ئۇنىڭ توغرىلىقىنى جەزملەپ، ئېھتىياجغا ئاساسەن ئۆزگەرتىڭ. بۇيرۇق قۇرىنىڭ بوش قالدۇرۇلۇشىغا يول قويۇلىدۇ.
+Description-uk.UTF-8: Рядок параметрів ядра kFreeBSD:
+ Наступний рядок параметрів ядра kFreeBSD було взято із /etc/default/grub чи з параметру 'kopt' в menu.lst із GRUB Legacy. Перевірте будь ласка його правильність і, за потреби, внесіть зміни.  Рядок параметрів ядра може бути порожнім.
+Description-vi.UTF-8: Dòng lệnh kFreeBSD:
+ Dòng lệnh kFreeBSD sau đây đã được trích ra từ /etc/default/grub hoặc từ tham số “kopt” trong menu.lst của GRUB Cũ. Hãy kiểm tra rằng nó vẫn đúng, và sửa đổi nó nếu cần. Dòng lệnh có thể được để trống.
+Description-zh_CN.UTF-8: kFreeBSD 参数：
+ 已从 /etc/default/grub 或者 GRUB Legacy 的 menu.lst 中的 `kopt' 参数中提取如下 kFreeBSD 命令行参数。请请检查是否正确，并且根据需要进行修改。此命令行可以为空。
+Description-zh_TW.UTF-8: kFreeBSD 命令列：
+ 以下的 kFreeBSD 命令列是由 /etc/default/grub，或是由 GRUB Legacy 的 menu.lst 中的 `kopt' 參數所擷取出來的。請確認它是否正確，若有必要請加以修改。此命令列可以留空。
+
+Template: grub2/kfreebsd_cmdline_default
+Type: string
+Default: quiet splash
+Description: kFreeBSD default command line:
+ The following string will be used as kFreeBSD parameters for the default menu
+ entry but not for the recovery mode.
+Description-ar.UTF-8: سطر أوامر KFreeBSD الافتراضي:
+ سيتم استخدام النص التالي كمُعطى KFreeBSD لمُدخل القائمة
+ الافتراضي ولكن ليس لوضع الإنقاذ.
+Description-ast.UTF-8: Llínia comandos por defeutu kFreeBSD:
+ La siguiente cadena será usada cómo parametros kFreeBSD pa la entrada del menú por defeutu, pero non pal mou recuperación.
+Description-be.UTF-8: Прадвызначаны радок камандаў для ядра kFreeBSD:
+ Наступны радок будзе выкарыстаны ў якасці параметраў ядра kFreeBSD для прадвызначанага пункту меню (але не для рэжыму аднаўлення).
+Description-bg.UTF-8: Параметри на Линукс по подразбиране:
+ Следните параметри ще бъдат използвани по подразбиране при зареждане на kFreeBSD, освен в авариен режим.
+Description-ca.UTF-8: Línia d'ordres de kFreeBSD per defecte:
+ La cadena següent serà emprada com a paràmetres del kFreeBSD per al menú d'entrada per defecte però no per al mode de recuperació.
+Description-cs.UTF-8: Výchozí parametry pro kFreeBSD:
+ Následující parametry pro kFreeBSD se použijí pro výchozí položku menu, ale ne pro záchranný režim.
+Description-cy.UTF-8: Llinell orchymyn ddiofyn kFreeBSD:
+ Defnyddir y llinyn canlynol fel paramedrau kFreeBSD ar gyfer y cofnod bwydlen diofyn ond ddim ar gyfer y modd achub.
+Description-da.UTF-8: Standardkommandolinje i kFreeBSD:
+ Den følgende streng vil blive brugt som kFreeBSD-parametre for standardmenupunktet men ikke for gendannelsestilstanden.
+Description-de.UTF-8: Standard-Befehlszeile für kFreeBSD:
+ Die folgende Zeichenkette wird als kFreeBSD-Parameter für den Standardmenüeintrag, nicht aber für den Rettungsmodus verwandt.
+Description-dz.UTF-8: kFreeBSD སྔོན་སྒྲིག་བརྡ་བཀོད་གྲལ་ཐིག་:
+ འོག་གི་ཡིག་རྒྱུན་ཚུ་ སྔོན་སྒྲིག་དཀར་ཆག་ཐོ་བཀོད་ཀྱི་དོན་ལུ་ kFreeBSD སྦེ་ལག་ལེན་འཐབ་འོང་ དེ་འབདཝད་ སླར་གསོ་ཐབས་ལམ་གྱི་དོན་ལུ་ལག་ལེན་མི་འཐབ།
+Description-el.UTF-8: Προκαθορισμένη γραμμή εντολών kFreeBSD:
+ Η ακόλουθη συμβολοσειρά θα χρησιμοποιηθεί για τις παραμέτρους kFreeBSD στην προκαθορισμένη είσοδο του μενού εκκίνησης αλλά όχι για την κατάσταση διάσωσης (recovery mode).
+Description-eo.UTF-8: Implicita komand-linio de kFreeBSD:
+ La jena ĉeno estos uzata kiel parametrojn de kFreeBSD por la ordinara menuero sed ne por la restariga reĝimo.
+Description-es.UTF-8: Línea de órdenes predeterminada de kFreeBSD:
+ La siguiente cadena se utilizará como parámetros de kFreeBSD para la entrada predeterminada del menú pero no para el modo de recuperación.
+Description-eu.UTF-8: KFreeBSD-ko komando-lerro lehenetsia:
+ Honako katea menuko sarrera lehenetsiaren KFreeBSD-ko parametro gisa erabiliko da, baina ez berreskuratzeko moduan.
+Description-fa.UTF-8: خط فرمان پیش فرض kFreeBSD:
+ این رشته به عنوان یکی از پارامتر های kFreeBSD برای منوی پیش فرض استفاده خواهد شد و نه برای حالت بازیابی.
+Description-fi.UTF-8: kFreeBSD:n oletuskomentorivi:
+ Seuraavaa merkkijonoa käytetään kFreeBSD:n käynnistysvalikon oletusvalinnan parametreina, mutta ei toipumistilassa.
+Description-fr.UTF-8: Ligne de commande par défaut de kFreeBSD :
+ Les paramètres indiqués seront utilisés pour le noyau kFreeBSD de l'entrée de menu par défaut mais pas pour le mode de secours.
+Description-gl.UTF-8: Liña de comando por defecto para kFreeBSD:
+ A seguinte cadea usarase como parámetros para kFreeBSD para a entrada por defecto do menú, pero non para o modo de recuperación.
+Description-gu.UTF-8: kFreeBSD મૂળભૂત આદેશ:
+ નીચેનું વાક્ય મૂળભૂત મેનુ રીત માટે kFreeBSD પરિમાણો માટે વાપરવામાં આવશે પણ રીકવરી સ્થિતિ માટે નહી.
+Description-he.UTF-8: ברירת מחדל לשורת הפקודה של kFreeBSD:
+ המחרוזת הבאה תשמש כפרמטרי kFreeBSD עבור ברירת המחדל בתפריט אבל לא עבור מצב recovery.
+Description-hr.UTF-8: Pretpostavljeni kFreeBSD naredbeni redak:
+ Sljedeći izraz će biti korišten kao parametar za kFreeBSD stavke u izborniku, osim za spasonosni način rada.
+Description-hu.UTF-8: Az alapértelmezett kFreeBSD parancssor:
+ A következő sort fogjuk kFreeBSD paraméternek használni az alapértelmezett (default) menüben, de a rendszervisszaállító (recovery) módban nem.
+Description-id.UTF-8: Baris perintah standar kFreeBSD:
+ String berikut ini digunakan sebagai parameter kFreeBSD untuk menu standar, tetapi tidak digunakan untuk modus darurat.
+Description-is.UTF-8: Sjálfgefin kFreeBSD skipanalína:
+ Eftirfarandi strengur verður notaður sem kFreeBSD viðfang í sjálfgefnu valmyndarfærslunni en ekki í viðgerðarham.
+Description-it.UTF-8: Riga di comando kFreeBSD predefinita:
+ Questa stringa verrà usata come parametri per kFreeBSD nella voce di menu predefinita, ma non nella modalità di ripristino.
+Description-ja.UTF-8: kFreeBSD デフォルトコマンドライン:
+ 以下の文字列はリカバリーモードではない通常のメニューエントリでの kFreeBSD パラメータとして使われます。
+Description-ka.UTF-8: kFreeBSD-ის სტანდარტული ბრძანების სტრიქონი:
+ შემდეგი სტრიქონი გამოყენებულ იქნება როგორც kFreeBSD-ს პარამეტრები მენიუს სტანდარტული შენატანისათვის, მაგრამ არა აღდგენის რეჟიმისათვის.
+Description-kk.UTF-8: kFreeBSD бастапқы командалық жолы:
+ Келесі жол kFreeBSD параметрлері бастапқы мәзірі үшін, бірақ қалпына келтіру үшін емес, қолданылатын болады.
+Description-km.UTF-8: ពាក្យ​បញ្ជា​លំនាំដើម​របស់ kFreeBSD ៖
+ ឃ្លា​ដូច​ខាង​ក្រោម​នឹង​ត្រូវ​បាន​ប្រើ​ជា​ប៉ារ៉ាម៉ែត្រ kFreeBSD សម្រាប់​ធាតុ​ម៉ឺនុយ​លំនាំដើម ប៉ុន្តែ​មិន​សម្រាប់​របៀប​សង្គ្រោះ​ទេ ។
+Description-ko.UTF-8: kFreeBSD 기본 명령어:
+ 다음 문자열을 기본 메뉴 항목의 kFreeBSD 파라미터로 사용합니다. 복구 모드에서는 사용하지 않습니다.
+Description-lt.UTF-8: Numatytoji „kFreeBSD“ komandos eilutė:
+ Ši eilutė bus naudojama kaip įprastiniai „kFreeBSD“ branduolio parametrai, bet ne pasirinkus atkūrimo veikseną.
+Description-lv.UTF-8: kFreeBSD noklusējuma komandrinda:
+ Sekojošā virkne tiks izmantota kā kFreeBSD parametri izvēlnes noklusējuma ierakstam, bet ne sistēmas atgūšanas režīmā.
+Description-mr.UTF-8: केफ्रीबीएसडी मूलनिर्धारीत आदेश ओळ:
+ मुलनिर्धारित मेन्यू नोंदीकरिता केफ्रीबीएसडी घटकमूल्ये म्हणून खालील श्रुंखला वापरली जाईल, पण रिकव्हरी मोडसाठी नाही.
+Description-nb.UTF-8: Standardkommandolinje i kFreeBSD:
+ Den følgende teksten vil bli brukt som kFreeBSD-parametre for standardmenupunktet men ikke for gjenopprettelsesmodus.
+Description-nl.UTF-8: Standaard kFreeBSD-commandoregel:
+ De volgende regel zal, behalve in de herstelmodus, gebruikt worden voor de kFreeBSD parameters in de standaard menuoptie.
+Description-no.UTF-8: Standardkommandolinje i kFreeBSD:
+ Den følgende teksten vil bli brukt som kFreeBSD-parametre for standardmenupunktet men ikke for gjenopprettelsesmodus.
+Description-pl.UTF-8: Domyślny wiersz poleceń do kFreeBSD:
+ Następujący ciąg będzie użyty jako parametry przekazywane do jądra kFreeBSD w domyślnym wpisie menu (ale nie w trybie ratunkowym).
+Description-pt.UTF-8: Linha de comandos padrão do kFreeBSD:
+ A seguinte linha será utilizada como parâmetros para o kFreeBSD para a entrada por omissão do menu, mas não para o modo de recuperação.
+Description-pt_BR.UTF-8: Linha de comando padrão kFreeBSD:
+ O seguinte texto será usado como lista de parâmetros do kFreeBSD para a entrada padrão do menu, mas não para o modo de recuperação.
+Description-ro.UTF-8: Linia de comandă implicită kFreeBSD:
+ Următorul șir va fi folosit ca parametru pentru kFreeBSD pentru poziția implicită din meniu, dar nu și pentru cea de recuperare.
+Description-ru.UTF-8: Командная строка kFreeBSD по умолчанию:
+ Данная строка будет использоваться в качестве параметров kFreeBSD в пункте меню по умолчанию, кроме режима восстановления.
+Description-si.UTF-8: kFreeBSD පෙරනිමි විධාන රේඛාව:
+ පහත යෙදුම පෙරනිමි මෙනු ඇතුළත් කිරීම් සඳහා kFreeBSD පරාමිතියක් ලෙස භාවිත වන නමුත් ගැලවීම් ප්‍රකාරයට නොවේ.
+Description-sk.UTF-8: Predvolený príkazový riadok kFreeBSD:
+ Nasledujúci reťazec bude použitý ako kFreeBSD parametre predvolenej položky menu, ale nie pre záchranný režim.
+Description-sl.UTF-8: Privzeta ukazna vrstica kFreeBSD:
+ Sledeča vrstica bo uporabljena kot parameter kFreeBSD za privzeti vnos v meniju, ne pa za reševalni način.
+Description-sq.UTF-8: Linja komanduese fillestare kFreeBSD:
+ Stringu në vijim do të përdoren si parametër kFreeBSD për menun fillaster hyrëse por jo për gjëndjen e rekuperimit.
+Description-sr.UTF-8: kFreeBSD подразумевајућа командна линија:
+ Следећи стринг ће бити употребљен као kFreeBSD параметри за подреазумевано покретање, али не и за мод за поправку.
+Description-sr@latin.UTF-8: kFreeBSD podrazumevajuća komandna linija:
+ Sledeći string će biti upotrebljen kao kFreeBSD parametri za podreazumevano pokretanje, ali ne i za mod za popravku.
+Description-sv.UTF-8: Standardkommandorad för kFreeBSD:
+ Följande sträng kommer användas som Linux-parametrar för standardmenyvalet men inte för återhämtningsläge (eng. recovery).
+Description-ta.UTF-8: கேப்ரீபிஎஸ்டி முன்னிருப்பு கட்டளை வரி:
+ பின் வரும் சரங்கள் முன்னிருப்பு மெனு உள்ளீட்டுக்கு கேப்ரீபிஎஸ்டி அளபுருக்களாக பயன்படுத்தப்படும்; ஆனால் மீட்டெடுப்பு பாங்குக்கு அல்ல
+Description-th.UTF-8: พารามิเตอร์สำหรับบูต kFreeBSD แบบปกติ:
+ พารามิเตอร์ต่อไปนี้จะใช้ในเมนูสำหรับบูต kFreeBSD แบบปกติ แต่จะไม่ใช้กับโหมดกู้ระบบ
+Description-tr.UTF-8: Öntanımlı kFreeBSD komut satırı:
+ Aşağıdaki dizgi öntanımlı menü girişinin kFreeBSD parametreleri olarak kullanılacak; fakat kurtarma kipi için kullanılmayacaktır.
+Description-ug.UTF-8: kFreeBSD كۆڭۈلدىكى بۇيرۇق قۇرى:
+ تۆۋەندىكى ھەرپ تىزىقى كۆڭۈلدىكى تىزىملىك تۈرىنىڭ kFreeBSD پارامېتىرىغا ئىشلىتىلىدۇ ئەمما ئەسلىگە كەلتۈرۈش ھالىتىگە قوللىنىلمايدۇ.
+Description-uk.UTF-8: Типовий рядок параметрів ядра kFreeBSD:
+ Даний рядок буде використано як параметри ядра kFreeBSD для типового пункту меню, проте не для режиму відновлення.
+Description-vi.UTF-8: Dòng lệnh kFreeBSD mặc định:
+ Chuỗi theo đây sẽ được sử dụng làm các tham số kFreeBSD cho mục nhập trình đơn mặc định, mà không phải cho chế độ phục hồi.
+Description-zh_CN.UTF-8: kFreeBSD 默认命令行：
+ 如下字符串将用于默认菜单项的 kFreeBSD 参数，但不会用于恢复模式。
+Description-zh_TW.UTF-8: kFreeBSD 預設命令列：
+ 以下的字串將會用在預設的選單項目中做為 kFreeBSD 參數，但不會用於回復模式。
+
+Template: grub2/unsigned_kernels_title
+Type: title
+Description: unsigned kernels
+
+Template: grub2/unsigned_kernels
+Type: note
+Description: Cannot upgrade Secure Boot enforcement policy due to unsigned kernels
+ Your system has UEFI Secure Boot enabled in firmware, and the following kernels
+ present on your system are unsigned:
+ .
+  ${unsigned_versions}
+ .
+ These kernels cannot be verified under Secure Boot.  To ensure your system
+ remains bootable, GRUB will not be upgraded on your disk until these kernels are
+ removed or replaced with signed kernels.

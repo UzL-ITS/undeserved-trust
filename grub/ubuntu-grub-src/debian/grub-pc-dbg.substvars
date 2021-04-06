@@ -1,0 +1,2 @@
+misc:Depends=grub-common (= ${binary:Version})
+misc:Pre-Depends=
