@@ -1,0 +1,4 @@
+grub-coreboot-bin: unstripped-binary-or-object *.mod
+grub-coreboot-bin: statically-linked-binary usr/lib/grub/i386-coreboot/kernel.img
+grub-coreboot-bin: statically-linked-binary ./usr/lib/grub/i386-coreboot/kernel.img
+grub-coreboot-bin: unstripped-binary-or-object usr/lib/grub/i386-coreboot/kernel.img

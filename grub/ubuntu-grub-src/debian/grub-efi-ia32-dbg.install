@@ -1,0 +1,4 @@
+usr/lib/grub/i386-efi/*.exec
+usr/lib/grub/i386-efi/*.module
+usr/lib/grub/i386-efi/gdb_grub
+usr/lib/grub/i386-efi/gmodule.pl

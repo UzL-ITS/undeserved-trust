@@ -1,0 +1,11 @@
+8078b6f24767ff216eb390a997926d48  usr/share/bug/grub-firmware-qemu/presubj
+0d5ead2e5fdc1dad9283d5a770980056  usr/share/bug/grub-firmware-qemu/script
+1d45fbe52b38094bb733dfd16e7eba14  usr/share/doc/grub-firmware-qemu/AUTHORS
+c9af44b9ec19b9170fabcbb32f1d2368  usr/share/doc/grub-firmware-qemu/NEWS.Debian.gz
+6762b594251a9a8e7f4f3b96adec8e4f  usr/share/doc/grub-firmware-qemu/NEWS.gz
+4171d242ff6e791d8e8d08d6c7f1000b  usr/share/doc/grub-firmware-qemu/README
+8cc2d631e383fb844a26e46355f94c55  usr/share/doc/grub-firmware-qemu/THANKS
+0d49d7a42a775ce5217c3c1aab473102  usr/share/doc/grub-firmware-qemu/TODO
+a6d4810371ab4f09f982c07bb2180831  usr/share/doc/grub-firmware-qemu/changelog.Debian.gz
+966dd976254e84e9243ce58de18196fa  usr/share/doc/grub-firmware-qemu/copyright
+90932aec2d2ac44edd2d0676f7645cdc  usr/share/qemu/grub.bin

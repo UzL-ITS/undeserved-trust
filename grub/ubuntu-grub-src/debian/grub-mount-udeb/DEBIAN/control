@@ -1,0 +1,11 @@
+Package: grub-mount-udeb
+Source: grub2
+Version: 2.04-1ubuntu26.7
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1640
+Depends: libc6-udeb (>= 2.31), libdevmapper1.02.1-udeb (>= 2:1.02.167), libfuse2-udeb
+Section: debian-installer
+Priority: optional
+Description: export GRUB filesystems using FUSE
+Original-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>

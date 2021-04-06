@@ -1,0 +1,185 @@
+From 5728634080c1984d5d2949034c7c9709bfabb10e Mon Sep 17 00:00:00 2001
+From: alyrot <alyrot@protonmail.com>
+Date: Fri, 22 Jan 2021 09:27:46 +0100
+Subject: [PATCH 3/3] AMD SEV Patch [3/3]
+
+https://lists.gnu.org/archive/html/grub-devel/2020-11/msg00081.html
+---
+ grub-core/Makefile.core.def    |   8 +++
+ grub-core/disk/efi/sevsecret.c | 118 +++++++++++++++++++++++++++++++++
+ include/grub/efi/api.h         |  15 +++++
+ 3 files changed, 141 insertions(+)
+ create mode 100644 grub-core/disk/efi/sevsecret.c
+
+diff --git a/grub-core/Makefile.core.def b/grub-core/Makefile.core.def
+index 166b444c7..49b2fa4fb 100644
+--- a/grub-core/Makefile.core.def
++++ b/grub-core/Makefile.core.def
+@@ -784,6 +784,14 @@ module = {
+   enable = efi;
+ };
+ 
++module = {
++  name = sevsecret;
++
++  common = disk/efi/sevsecret.c;
++
++  enable = efi;
++};
++
+ module = {
+   name = lsefimmap;
+ 
+diff --git a/grub-core/disk/efi/sevsecret.c b/grub-core/disk/efi/sevsecret.c
+new file mode 100644
+index 000000000..3bba3c756
+--- /dev/null
++++ b/grub-core/disk/efi/sevsecret.c
+@@ -0,0 +1,118 @@
++#include <grub/err.h>
++#include <grub/command.h>
++#include <grub/misc.h>
++#include <grub/cryptodisk.h>
++#include <grub/efi/efi.h>
++#include <grub/efi/api.h>
++#include <grub/dl.h>
++
++GRUB_MOD_LICENSE ("GPLv3+");
++
++static grub_efi_packed_guid_t sevsecret_guid = GRUB_EFI_SEVSECRET_TABLE_GUID;
++static grub_efi_packed_guid_t tableheader_guid = GRUB_EFI_SEVSECRET_TABLE_HEADER_GUID;
++static grub_efi_packed_guid_t diskpasswd_guid = GRUB_EFI_DISKPASSWD_GUID;
++
++/*
++ * EFI places the secret in the lower 4GB, so it uses a UINT32
++ * for the pointer which we have to transform to the correct type
++ */
++struct sev_secret {
++  grub_uint32_t base;
++  grub_uint32_t size;
++};
++
++struct secret_header {
++  grub_efi_packed_guid_t guid;
++  grub_uint32_t len;
++};
++
++struct secret_entry {
++  grub_efi_packed_guid_t guid;
++  grub_uint32_t len;
++  char data[0];
++};
++
++static grub_err_t
++grub_efi_sevsecret_find (struct sev_secret *s)
++{
++  int len;
++  struct secret_header *h;
++  struct secret_entry *e;
++  unsigned char *ptr = (unsigned char *)(unsigned long)s->base;
++
++  /* the area must be big enough for a guid and a u32 length */
++  if (s->size < sizeof (*h))
++    return grub_error (GRUB_ERR_BAD_ARGUMENT, "SEV secret area is too small");
++
++  h = (struct secret_header *)ptr;
++  if (grub_memcmp(&h->guid, &tableheader_guid, sizeof (h->guid)))
++    return grub_error (GRUB_ERR_BAD_ARGUMENT, "SEV secret area does not start with correct guid\n");
++  if (h->len < sizeof (*h))
++    return grub_error (GRUB_ERR_BAD_ARGUMENT, "SEV secret area is too small\n");
++
++  len = h->len - sizeof (*h);
++  ptr += sizeof (*h);
++
++  while (len >= (int)sizeof (*e)) {
++    e = (struct secret_entry *)ptr;
++    if (e->len < sizeof(*e) || e->len > (unsigned int)len)
++      return grub_error (GRUB_ERR_BAD_ARGUMENT, "SEV secret area is corrupt\n");
++
++    if (! grub_memcmp (&e->guid, &diskpasswd_guid, sizeof (e->guid))) {
++      int end = e->len - sizeof(*e);
++
++      /*
++       * the passphrase must be a zero terminated string because the
++       * password routines call grub_strlen () to find its size
++       */
++      if (e->data[end - 1] != '\0')
++       return grub_error (GRUB_ERR_BAD_ARGUMENT, "SEV secret area disk encryption password is not zero terminated\n");
++
++      return grub_cryptodisk_set_secret (e->data);
++    }
++    ptr += e->len;
++    len -= e->len;
++  }
++  return grub_error (GRUB_ERR_BAD_ARGUMENT, "SEV secret aread does not contain disk decryption password\n");
++}
++
++static grub_err_t
++grub_efi_sevsecret_init (void)
++{
++  unsigned int i;
++
++  for (i = 0; i < grub_efi_system_table->num_table_entries; i++)
++    {
++      grub_efi_packed_guid_t *guid =
++       &grub_efi_system_table->configuration_table[i].vendor_guid;
++
++      if (! grub_memcmp (guid, &sevsecret_guid, sizeof (grub_efi_packed_guid_t))) {
++       struct sev_secret *s =
++         grub_efi_system_table->configuration_table[i].vendor_table;
++
++       return grub_efi_sevsecret_find(s);
++      }
++    }
++  return grub_error (GRUB_ERR_BAD_ARGUMENT, "No SEV secret found in the EFI configuration table");
++}
++
++static grub_err_t
++grub_cmd_sevsecret (grub_command_t cmd __attribute__ ((unused)),
++                   int argc __attribute__ ((unused)),
++                   char **args __attribute__ ((unused)))
++{
++  return grub_efi_sevsecret_init();
++}
++
++static grub_command_t cmd;
++
++GRUB_MOD_INIT(sevsecret)
++{
++  cmd = grub_register_command ("sevsecret", grub_cmd_sevsecret, 0,
++                              N_("Register a SEV secret with cryptomount if one exists"));
++}
++
++GRUB_MOD_FINI(sevsecret)
++{
++  grub_unregister_command (cmd);
++}
+diff --git a/include/grub/efi/api.h b/include/grub/efi/api.h
+index 1dcaa12f5..80eb880f8 100644
+--- a/include/grub/efi/api.h
++++ b/include/grub/efi/api.h
+@@ -299,6 +299,21 @@
+     { 0x9a, 0x16, 0x00, 0x90, 0x27, 0x3f, 0xc1, 0x4d } \
+   }
+ 
++#define GRUB_EFI_SEVSECRET_TABLE_GUID \
++  { 0xadf956ad, 0xe98c, 0x484c, \
++    { 0xae, 0x11, 0xb5, 0x1c, 0x7d, 0x33, 0x64, 0x47} \
++  }
++
++#define GRUB_EFI_SEVSECRET_TABLE_HEADER_GUID \
++  { 0x1e74f542, 0x71dd, 0x4d66, \
++    { 0x96, 0x3e, 0xef, 0x42, 0x87, 0xff, 0x17, 0x3b } \
++  }
++
++#define GRUB_EFI_DISKPASSWD_GUID \
++  { 0x736869e5, 0x84f0, 0x4973, \
++    { 0x92, 0xec, 0x06, 0x87, 0x9c, 0xe3, 0xda, 0x0b } \
++  }
++
+ #define GRUB_EFI_ACPI_TABLE_GUID	\
+   { 0xeb9d2d30, 0x2d88, 0x11d3, \
+     { 0x9a, 0x16, 0x0, 0x90, 0x27, 0x3f, 0xc1, 0x4d } \
+-- 
+2.25.1
+

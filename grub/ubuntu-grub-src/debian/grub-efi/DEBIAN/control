@@ -1,0 +1,15 @@
+Package: grub-efi
+Source: grub2
+Version: 2.04-1ubuntu26.7
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 16
+Depends: grub-common (= 2.04-1ubuntu26.7), grub-efi-amd64 (= 2.04-1ubuntu26.7)
+Section: oldlibs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (dummy package)
+ This is a dummy transitional package that depends on either grub-efi-ia32 or
+ grub-efi-amd64, depending on the architecture.
+Original-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>

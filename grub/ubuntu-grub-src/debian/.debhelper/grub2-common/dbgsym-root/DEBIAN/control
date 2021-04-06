@@ -1,0 +1,14 @@
+Package: grub2-common-dbgsym
+Package-Type: ddeb
+Source: grub2
+Version: 2.04-1ubuntu26.7
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1881
+Depends: grub2-common (= 2.04-1ubuntu26.7)
+Section: debug
+Priority: optional
+Description: debug symbols for grub2-common
+Build-Ids: 4e778e296bdd1f0809a7945d1899e3154dced9b8
+Original-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>

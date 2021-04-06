@@ -1,0 +1,3 @@
+grub-ieee1275-dbg: unstripped-binary-or-object *.module
+grub-ieee1275-dbg: statically-linked-binary *.image
+grub-ieee1275-dbg: statically-linked-binary usr/lib/grub/i386-ieee1275/kernel.exec

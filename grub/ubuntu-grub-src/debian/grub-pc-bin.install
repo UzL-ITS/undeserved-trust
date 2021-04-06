@@ -1,0 +1,10 @@
+usr/lib/grub/i386-pc/*.img
+usr/lib/grub/i386-pc/*.lst
+usr/lib/grub/i386-pc/*.mod
+usr/lib/grub/i386-pc/config.h
+usr/lib/grub/i386-pc/modinfo.sh
+usr/bin/grub-ntldr-img			usr/lib/grub/i386-pc
+usr/lib/grub/i386-pc/g2hdr.bin
+usr/lib/grub/i386-pc/g2ldr.mbr
+usr/sbin/grub-bios-setup		usr/lib/grub/i386-pc
+usr/lib/grub/i386-pc/efiemu*.o

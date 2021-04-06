@@ -1,0 +1,5 @@
+usr/lib/grub/i386-efi/*.img
+usr/lib/grub/i386-efi/*.lst
+usr/lib/grub/i386-efi/*.mod
+usr/lib/grub/i386-efi/config.h
+usr/lib/grub/i386-efi/modinfo.sh

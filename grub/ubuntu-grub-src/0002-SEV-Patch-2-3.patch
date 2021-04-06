@@ -1,0 +1,164 @@
+From 967a93811d3e50d35b4fe5e5a251af879028f84d Mon Sep 17 00:00:00 2001
+From: alyrot <alyrot@protonmail.com>
+Date: Fri, 22 Jan 2021 09:21:49 +0100
+Subject: [PATCH 2/3] SEV Patch [2/3]
+
+https://lists.gnu.org/archive/html/grub-devel/2020-11/msg00080.html
+---
+ grub-core/disk/cryptodisk.c | 60 ++++++++++++++++++++++++++++++++++---
+ include/grub/cryptodisk.h   |  2 ++
+ 2 files changed, 58 insertions(+), 4 deletions(-)
+
+diff --git a/grub-core/disk/cryptodisk.c b/grub-core/disk/cryptodisk.c
+index 43268dfce..a451ae1e5 100644
+--- a/grub-core/disk/cryptodisk.c
++++ b/grub-core/disk/cryptodisk.c
+@@ -41,6 +41,7 @@ static const struct grub_arg_option options[] =
+     /* TRANSLATORS: It's still restricted to cryptodisks only.  */
+     {"all", 'a', 0, N_("Mount all."), 0, 0},
+     {"boot", 'b', 0, N_("Mount all volumes with `boot' flag set."), 0, 0},
++    {"secret", 's', 0, N_("Get OS provisioned secret and mount all volumes encrypted with that secret"), 0, 0},
+     {0, 0, 0, 0, 0, 0}
+   };
+ 
+@@ -970,6 +971,10 @@ grub_util_cryptodisk_get_uuid (grub_disk_t disk)
+ 
+ static int check_boot, have_it;
+ static char *search_uuid;
++static char *os_passwd;
++
++/* variable to hold the passed in secret area. */
++static char *os_secret_area;
+ 
+ static void
+ cryptodisk_close (grub_cryptodisk_t dev)
+@@ -980,6 +985,17 @@ cryptodisk_close (grub_cryptodisk_t dev)
+   grub_free (dev);
+ }
+ 
++static int
++os_password_get(char buf[], unsigned len)
++{
++  /* os_passwd should be null terminated, so just copy everything */
++  grub_strncpy(buf, os_passwd, len);
++  /* and add a terminator just in case */
++  buf[len - 1] = 0;
++
++  return 1;
++}
++
+ static grub_err_t
+ grub_cryptodisk_scan_device_real (const char *name, grub_disk_t source)
+ {
+@@ -999,8 +1015,17 @@ grub_cryptodisk_scan_device_real (const char *name, grub_disk_t source)
+       return grub_errno;
+     if (!dev)
+       continue;
+-    
+-    err = cr->recover_key (source, dev, grub_password_get);
++
++    if (os_passwd)
++      {
++       err = cr->recover_key (source, dev, os_password_get);
++       if (err)
++         /* if the key doesn't work ignore the access denied error */
++         grub_error_pop();
++      }
++    else
++      err = cr->recover_key (source, dev, grub_password_get);
++
+     if (err)
+     {
+       cryptodisk_close (dev);
+@@ -1016,6 +1041,14 @@ grub_cryptodisk_scan_device_real (const char *name, grub_disk_t source)
+   return GRUB_ERR_NONE;
+ }
+ 
++grub_err_t
++grub_cryptodisk_set_secret (char *secret)
++{
++  os_secret_area = secret;
++
++  return GRUB_ERR_NONE;
++}
++
+ #ifdef GRUB_UTIL
+ #include <grub/util/misc.h>
+ grub_err_t
+@@ -1092,7 +1125,7 @@ grub_cmd_cryptomount (grub_extcmd_context_t ctxt, int argc, char **args)
+ {
+   struct grub_arg_list *state = ctxt->state;
+ 
+-  if (argc < 1 && !state[1].set && !state[2].set)
++  if (argc < 1 && !state[1].set && !state[2].set && !state[3].set)
+     return grub_error (GRUB_ERR_BAD_ARGUMENT, "device name required");
+ 
+   have_it = 0;
+@@ -1110,6 +1143,7 @@ grub_cmd_cryptomount (grub_extcmd_context_t ctxt, int argc, char **args)
+ 
+       check_boot = state[2].set;
+       search_uuid = args[0];
++      os_passwd = NULL;
+       grub_device_iterate (&grub_cryptodisk_scan_device, NULL);
+       search_uuid = NULL;
+ 
+@@ -1120,11 +1154,28 @@ grub_cmd_cryptomount (grub_extcmd_context_t ctxt, int argc, char **args)
+   else if (state[1].set || (argc == 0 && state[2].set))
+     {
+       search_uuid = NULL;
++      os_passwd = NULL;
+       check_boot = state[2].set;
+       grub_device_iterate (&grub_cryptodisk_scan_device, NULL);
+       search_uuid = NULL;
+       return GRUB_ERR_NONE;
+     }
++  else if (state[3].set)
++    {
++      /* do we have a secret? */
++      if (os_secret_area == NULL)
++       return grub_error (GRUB_ERR_INVALID_COMMAND, "No OS secret is provisioned");
++
++      os_passwd = os_secret_area;
++      search_uuid = NULL;
++      grub_device_iterate (&grub_cryptodisk_scan_device, NULL);
++      os_passwd = NULL;
++
++      if (!have_it)
++       return grub_error (GRUB_ERR_ACCESS_DENIED, "SEV password failed to unlock any volumes");
++
++      return GRUB_ERR_NONE;
++    }
+   else
+     {
+       grub_err_t err;
+@@ -1135,6 +1186,7 @@ grub_cmd_cryptomount (grub_extcmd_context_t ctxt, int argc, char **args)
+       grub_size_t len;
+ 
+       search_uuid = NULL;
++      os_passwd = NULL;
+       check_boot = state[2].set;
+       diskname = args[0];
+       len = grub_strlen (diskname);
+@@ -1302,7 +1354,7 @@ GRUB_MOD_INIT (cryptodisk)
+ {
+   grub_disk_dev_register (&grub_cryptodisk_dev);
+   cmd = grub_register_extcmd ("cryptomount", grub_cmd_cryptomount, 0,
+-			      N_("SOURCE|-u UUID|-a|-b"),
++			      N_("SOURCE|-u UUID|-a|-b|-s"),
+ 			      N_("Mount a crypto device."), options);
+   grub_procfs_register ("luks_script", &luks_script);
+ }
+diff --git a/include/grub/cryptodisk.h b/include/grub/cryptodisk.h
+index e70da1cb0..b19076b4f 100644
+--- a/include/grub/cryptodisk.h
++++ b/include/grub/cryptodisk.h
+@@ -163,4 +163,6 @@ grub_util_get_geli_uuid (const char *dev);
+ grub_cryptodisk_t grub_cryptodisk_get_by_uuid (const char *uuid);
+ grub_cryptodisk_t grub_cryptodisk_get_by_source_disk (grub_disk_t disk);
+ 
++grub_err_t grub_cryptodisk_set_secret(char *secret);
++
+ #endif
+-- 
+2.25.1
+

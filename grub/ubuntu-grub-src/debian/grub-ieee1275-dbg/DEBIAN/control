@@ -1,0 +1,15 @@
+Package: grub-ieee1275-dbg
+Source: grub2
+Version: 2.04-1ubuntu26.7
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 13316
+Depends: grub-common (= 2.04-1ubuntu26.7), grub-ieee1275-bin (= 2.04-1ubuntu26.7)
+Section: debug
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.gnu.org/software/grub/
+Description: GRand Unified Bootloader, version 2 (Open Firmware debug files)
+ This package contains debugging files for grub-ieee1275-bin.  You only
+ need these if you are trying to debug GRUB using its GDB stub.
+Original-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>

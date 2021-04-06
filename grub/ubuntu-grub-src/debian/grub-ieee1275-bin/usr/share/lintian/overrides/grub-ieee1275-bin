@@ -1,0 +1,4 @@
+grub-ieee1275-bin: unstripped-binary-or-object *.mod
+grub-ieee1275-bin: statically-linked-binary usr/lib/grub/i386-ieee1275/kernel.img
+grub-ieee1275-bin: statically-linked-binary ./usr/lib/grub/i386-ieee1275/kernel.img
+grub-ieee1275-bin: unstripped-binary-or-object usr/lib/grub/i386-ieee1275/kernel.img

@@ -1,0 +1,2 @@
+Check the project Websites of the Linux kernel, OVMF, QEMU, Grub, and sev-tool for their respective licenses.
+All of our material (binary files, modifications to the afore mentioned projects) are under MIT licencse.

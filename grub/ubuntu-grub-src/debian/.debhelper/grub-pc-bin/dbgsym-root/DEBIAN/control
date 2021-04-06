@@ -1,0 +1,14 @@
+Package: grub-pc-bin-dbgsym
+Package-Type: ddeb
+Source: grub2
+Version: 2.04-1ubuntu26.7
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1450
+Depends: grub-pc-bin (= 2.04-1ubuntu26.7)
+Section: debug
+Priority: optional
+Description: debug symbols for grub-pc-bin
+Build-Ids: 0312820e2e2af379a19667df8de8234ed4ab5fe6 24d03e3a8ccac6b75557f0f76dfb41061e9563da
+Original-Maintainer: GRUB Maintainers <pkg-grub-devel@alioth-lists.debian.net>

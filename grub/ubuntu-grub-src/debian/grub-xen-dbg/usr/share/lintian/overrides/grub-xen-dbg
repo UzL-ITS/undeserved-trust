@@ -1,0 +1,9 @@
+grub-xen-dbg: unstripped-binary-or-object *.module
+grub-xen-dbg: statically-linked-binary *.image
+grub-xen-dbg: statically-linked-binary usr/lib/grub/x86_64-xen/kernel.exec
+grub-xen-dbg: statically-linked-binary usr/lib/grub/i386-xen/kernel.exec
+grub-xen-dbg: statically-linked-binary usr/lib/grub/i386-xen_pvh/kernel.exec
+grub-xen-dbg: binary-from-other-architecture *.module
+grub-xen-dbg: binary-from-other-architecture usr/lib/grub/x86_64-xen/kernel.exec
+grub-xen-dbg: binary-from-other-architecture usr/lib/grub/i386-xen/kernel.exec
+grub-xen-dbg: binary-from-other-architecture usr/lib/grub/i386-xen_pvh/kernel.exec

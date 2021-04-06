@@ -1,0 +1,13 @@
+{
+    "version": "2",
+    "packages": {
+        "grub-efi-ia32-bin": {
+            "trusted_certs": [],
+            "files": [
+                {"sig_type": "efi", "file": "usr/lib/grub/i386-efi/monolithic/gcdia32.efi"},
+                {"sig_type": "efi", "file": "usr/lib/grub/i386-efi/monolithic/grubnetia32.efi"},
+                {"sig_type": "efi", "file": "usr/lib/grub/i386-efi/monolithic/grubia32.efi"}
+            ]
+        }
+    }
+}
