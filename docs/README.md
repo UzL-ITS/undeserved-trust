@@ -10,5 +10,13 @@ We show that the current attestation mechanism of Zen 1 and Zen 2 architectures 
 
 # Cite
 ```
-TODO
+@article{undeservedTrust,
+  author    = {Luca Wilke and
+               Jan Wichelmann and
+               Florian Sieck and
+               Thomas Eisenbarth},
+  title     = {undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation},
+  year      = {2021},
+  url       = {https://uzl-its.github.io/undeserved-trust/},
+}
 ```
