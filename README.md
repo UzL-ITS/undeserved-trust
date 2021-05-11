@@ -1,5 +1,5 @@
 # undeSErved trust
-This is is the repository accompanying the "undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation" paper published in WOOT21 (Citation will be added after once the proceedings 
+This is is the repository accompanying the "undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation" paper published in WOOT21 (Citation will be added once the proceedings 
 are published). The paper will also be submitted to arXiv soon.
 As some parts of the attack in the paper depend on the exact binary layout of a binary, reproducing the results from scratch, and therefore adapting
 the attack to a new binary, is a bit tedious.
