@@ -16,7 +16,7 @@
 title: undeSErVed trust
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  UndeSErVed trust is a research paper, showing how to bypass AMD's SEV(-ES) attestation.
+  undeSErVed trust is a research paper, showing how to bypass AMD's SEV(-ES) attestation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
