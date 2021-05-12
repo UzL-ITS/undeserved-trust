@@ -1,13 +1,34 @@
-# Abstract 
-The ongoing trend of moving data and computation to the cloud is met with concerns regarding privacy and protection of intellectual property. Cloud Service Providers (CSP) must be fully trusted to not tamper with or disclose processed data, hampering adoption of cloud services for many sensitive or critical applications. As a result, CSPs and CPU manufacturers are rushing to find solutions for secure and trustworthy outsourced computation in the Cloud.
-While enclaves, like Intel SGX, are strongly limited in terms of throughput and size,
-AMD's Secure Encrypted Virtualization (SEV) offers hardware support for transparently protecting code and data of entire VMs, thus removing the performance, memory and software adaption barriers of enclaves. Through attestation of boot code integrity and means for securely transferring secrets into an encrypted VM, CSPs are effectively removed from the list of trusted entities.
-There have been several attacks on the security of SEV, by abusing I/O channels to encrypt and decrypt data, or by moving encrypted code blocks at runtime. Yet, none of these attacks have targeted the attestation protocol, the core of the secure computing environment created by SEV. 
-We show that the current attestation mechanism of Zen 1 and Zen 2 architectures has a significant flaw, allowing us to manipulate the loaded code without affecting the attestation outcome.  An attacker may abuse this weakness to inject arbitrary code at startup---and thus take control over the entire VM execution, without any indication to the VM's owner. Our attack primitives allow the attacker to do extensive modifications to the bootloader and the operating system, like injecting spy code or extracting secret data. We present a full end-to-end attack, from the initial exploit to leaking the key of the encrypted disk image during boot, giving the attacker unthrottled access to all of the VM's persistent data.
+
+# Quick Overview
+We show that the measurement used in AMD SEV's attestation is block permutation-agnostic, meaning that changing the order of measured memory blocks does not affect the attestation outcome, and thus allows the attacker to modify the execution flow without detection by the VM's owner. Using this, we construct an universal attack primitive, which reorders the measured blocks of an initially loaded UEFI and sets up a ROP chain to load and execute arbitrary code, giving the attacker full control over the VM's operating system.
+
+
+# Questions & Answers
+
+## What is AMD SEV and how does it work?
+AMD SEV and its incremental extensions SEV-ES and SEV-SNP aim to protect
+virtual machines from a malicious hypervisor by encrypting each VM's RAM 
+with a unique key. The keys are managed by the so-called *Secure Processor* and
+are inaccessible to the hypervisor. To bootstrap trust, the initial code image
+(usually an UEFI binary) of the VM is cryptographically attested by the Secure processor.
+
+## Which platforms are affected?
+Our attack affects all currently available AMD EPYC server processors, from the *Naples* (Zen 1) to the *Milan* microarchitecture (Zen 3) as well as the
+EPYC embedded series.
+
+## Are there countermeasures?
+Right now, there are no firmware patches for Zen 1 and Zen 2 available, leaving these systems vulnerable. For Zen 3, the SEV-SNP extension reliably prevents our attack.
+
+
+# Responsible Disclosure
+We've responsibly  disclosed  our  findings  to  AMD  via  email on January 19th, 2021. AMD has issued **CVE-2021-26311** and stated that the problem is resolved with SEV-SNP. As this is only
+available on 3rd gen EPYC CPUs, previous generations, limited to SEV-ES, will remain
+vulnerable.
+https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1004
+
 
 # Videos
-Coming Soon
-
+To appear at [WOOT'21, May 27](https://www.ieee-security.org/TC/SP2021/SPW2021/WOOT21/). Stay tuned!
 
 # Cite
 ```
@@ -21,3 +42,4 @@ Coming Soon
   url       = {https://uzl-its.github.io/undeserved-trust/},
 }
 ```
+Will be updated once the [WOOT'21](https://www.ieee-security.org/TC/SP2021/SPW2021/WOOT21/) proceedings are available.
