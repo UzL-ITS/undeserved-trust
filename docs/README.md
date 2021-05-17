@@ -24,7 +24,7 @@ Right now, there are no firmware patches for Zen 1 and Zen 2 available, leaving 
 We've responsibly  disclosed  our  findings  to  AMD  via  email on January 19th, 2021. AMD has issued **CVE-2021-26311** and stated that the problem is resolved with SEV-SNP. As this is only
 available on 3rd gen EPYC CPUs, previous generations, limited to SEV-ES, will remain
 vulnerable.
-https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1004
+[AMD Security Bulletin](https://www.amd.com/en/corporate/product-security/bulletin/amd-sb-1004)
 
 
 # Videos
