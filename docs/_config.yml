@@ -38,9 +38,9 @@ paper_logo: test-logo-2.png
 has_paper_link: true
 #Just the name of the file
 paper_link: undeSErVed-trust-paper.pdf
-has_slide_link: false
+has_slide_link: true
 #Just the name of the file
-slide_link: SEVurity-slides.pdf
+slide_link: undeSErVed-trust-slides.pdf
 
 
 #dirty fix: on github the link to css file must be preended with /repo-name. For local we don't find the file with this prefix
