@@ -32,14 +32,14 @@ vulnerable.
 
 # Cite
 ```
-@article{undeservedTrust,
-  author    = {Luca Wilke and
-               Jan Wichelmann and
-               Florian Sieck and
-               Thomas Eisenbarth},
-  title     = {undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation},
-  year      = {2021},
-  url       = {https://uzl-its.github.io/undeserved-trust/},
+@INPROCEEDINGS{9474294,
+  author={Wilke, Luca and Wichelmann, Jan and Sieck, Florian and Eisenbarth, Thomas},
+  booktitle={2021 IEEE Security and Privacy Workshops (SPW)}, 
+  title={undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={456-466},
+  doi={10.1109/SPW53761.2021.00064}
 }
 ```
-Will be updated once the [WOOT'21](https://www.ieee-security.org/TC/SP2021/SPW2021/WOOT21/) proceedings are available.

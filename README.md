@@ -1,6 +1,6 @@
 # undeSErved trust
-This is is the repository accompanying the "undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation" paper published in WOOT21 (Citation will be added once the proceedings 
-are published). The paper will also be submitted to arXiv soon.
+This is is the repository accompanying the "undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation" paper published at WOOT21.
+For more information on the paper check out our [Paper Website](https://uzl-its.github.io/undeserved-trust).
 As some parts of the attack in the paper depend on the exact binary layout of a binary, reproducing the results from scratch, and therefore adapting
 the attack to a new binary, is a bit tedious.
 Thus we decided to also provide prebuilt binaries to make it easier to get started.
