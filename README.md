@@ -1,5 +1,5 @@
 # undeSErved trust
-This is is the repository accompanying the "undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation" paper published at WOOT21.
+This is the repository accompanying the "undeSErVed trust: Exploiting Permutation-Agnostic Remote Attestation" paper published at WOOT21.
 For more information on the paper check out our [Paper Website](https://uzl-its.github.io/undeserved-trust).
 As some parts of the attack in the paper depend on the exact binary layout of a binary, reproducing the results from scratch, and therefore adapting
 the attack to a new binary, is a bit tedious.
@@ -72,6 +72,7 @@ deb based src package.
 0003-AMD-SEV-Patch-3-3.patch
  ```
 at the end of `debian/patches/series` to include the patches in the build process
+
 3. Test that everything applies correctly with `quilt push -a`
 4. Build Deb packages with `DEB_BUILD_OPTIONS=nocheck debuild -b -uc -us` (without the nocheck you have endure the horribly slow unit testing)
 5. Extract the content of the deb package `grub-efi-amd64-bin_<version>.deb` with `dpkg -x <package> <target dir>`. All other .deb packages are not required. We will denote the path to the extracted content as GRUB_DIR and use it when building OVMF.
