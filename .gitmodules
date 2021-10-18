@@ -1,6 +1,6 @@
 [submodule "undserved-trust-ovmf"]
 	path = undserved-trust-ovmf
-	url = git@github.com:UzL-ITS/undserved-trust-ovmf.git
+	url = https://github.com/UzL-ITS/undeserved-trust-ovmf.git
 [submodule "undeserved-trust-qemu"]
 	path = undeserved-trust-qemu
 	url = https://github.com/UzL-ITS/undeserved-trust-qemu.git
